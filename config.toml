@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://kylernats.github.io/personal-blog/'
 languageCode = 'en-us'
 title = 'Kyler Nats | Cybersecurity Portfolio'
 theme = "PaperMod"
