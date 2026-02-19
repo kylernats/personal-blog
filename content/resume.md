@@ -3,16 +3,16 @@ title: "Professional Resume"
 layout: "page"
 ---
 
-[Download My Full Resume (PDF)]({{< relref "/uploads/Kyler_Nats_Resume.pdf" >}})
+[Download My Full Resume (PDF)](../uploads/Kyler_Nats_Resume.pdf)
 
-<div style="margin-top: 25px; border: 2px solid #333; border-radius: 8px; overflow: hidden;">
+<div style="margin-top: 20px; border: 1px solid #444; border-radius: 8px; overflow: hidden;">
     <object 
-        data="{{< relref "/uploads/Kyler_Nats_Resume.pdf" >}}" 
+        data="../uploads/Kyler_Nats_Resume.pdf" 
         type="application/pdf" 
         width="100%" 
         height="800px">
         <p>Your browser does not support PDFs. 
-           <a href="{{< relref "/uploads/Kyler_Nats_Resume.pdf" >}}">Download the PDF instead.</a>
+           <a href="../uploads/Kyler_Nats_Resume.pdf">Download the PDF instead.</a>
         </p>
     </object>
 </div>
