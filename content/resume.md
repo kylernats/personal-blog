@@ -5,14 +5,14 @@ layout: "page"
 
 [Download My Full Resume (PDF)](/uploads/Kyler_Nats_Resume.pdf)
 
-<div style="margin-top: 20px; border: 1px solid #444; border-radius: 8px; overflow: hidden;">
+<div style="margin-top: 25px; border: 2px solid #333; border-radius: 8px; overflow: hidden;">
     <object 
-        data="/personal-blog/uploads/Kyler_Nats_Resume.pdf" 
+        data="{{< relref "/uploads/Kyler_Nats_Resume.pdf" >}}" 
         type="application/pdf" 
         width="100%" 
         height="800px">
         <p>Your browser does not support PDFs. 
-           <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf">Download the PDF instead.</a>
+           <a href="{{< relref "/uploads/Kyler_Nats_Resume.pdf" >}}">Download the PDF instead.</a>
         </p>
     </object>
 </div>
