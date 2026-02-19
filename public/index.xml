@@ -49,7 +49,17 @@ I stood up a &lt;strong&gt;Kali Linux&lt;/strong&gt; attack machine and targeted
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/personal-blog/resume/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;../uploads/Kyler_Nats_Resume.pdf&#34;&gt;Download My Full Resume (PDF)&lt;/a&gt;&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
+&lt;div style=&#34;margin-top: 20px; border: 1px solid #444; border-radius: 8px; overflow: hidden;&#34;&gt;
+    &lt;object 
+        data=&#34;../uploads/Kyler_Nats_Resume.pdf&#34; 
+        type=&#34;application/pdf&#34; 
+        width=&#34;100%&#34; 
+        height=&#34;800px&#34;&gt;
+        &lt;p&gt;Your browser does not support PDFs. 
+           &lt;a href=&#34;../uploads/Kyler_Nats_Resume.pdf&#34;&gt;Download the PDF instead.&lt;/a&gt;
+        &lt;/p&gt;
+    &lt;/object&gt;
+&lt;/div&gt;
 &lt;p&gt;I believe my blend of academic learning and real world experience makes me a strong candidate for security roles. I have worked in a security operations center and I am comfortable using professional tools to track down malicious behavior. My goal is to find a role where I can help a company stay secure while continuing to grow my technical skills.&lt;/p&gt;</description>
     </item>
   </channel>
