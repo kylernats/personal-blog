@@ -3,6 +3,11 @@ languageCode = 'en-us'
 title = 'Kyler Nats | Cybersecurity Portfolio'
 theme = "PaperMod"
 
+# Required for GitHub Actions automated deployment
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [params]
     env = "production"
     description = "MS in MIS Candidate @ U of A | Cybersecurity & Cloud Security"
