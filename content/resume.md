@@ -3,7 +3,7 @@ title: "Professional Resume"
 layout: "page"
 ---
 
-[Download My Full Resume (PDF)](/uploads/Kyler_Nats_Resume.pdf)
+[Download My Full Resume (PDF)]({{< relref "/uploads/Kyler_Nats_Resume.pdf" >}})
 
 <div style="margin-top: 25px; border: 2px solid #333; border-radius: 8px; overflow: hidden;">
     <object 
