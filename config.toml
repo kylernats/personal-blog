@@ -29,7 +29,7 @@ Specializing in **Cloud Security**, **SOC Operations**, and **Automated Threat D
 
 ---
 <div style="margin-top: 25px; border: 2px solid #333; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
-    <embed src="/uploads/Kyler_Nats_Resume.pdf" type="application/pdf" width="100%" height="500px" />
+    <embed src="uploads/Kyler_Nats_Resume.pdf" type="application/pdf" width="100%" height="500px" />
 </div>
 '''
 
@@ -38,7 +38,7 @@ Specializing in **Cloud Security**, **SOC Operations**, and **Automated Threat D
         url = "https://linkedin.com/in/kyler-nats"
     [[params.socialIcons]]
         name = "github"
-        url = "https://github.com/arfies123"
+        url = "https://github.com/kylernats"
 
 # Navigation Menu
 [[menu.main]]
