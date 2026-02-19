@@ -28,8 +28,16 @@ Specializing in **Cloud Security**, **SOC Operations**, and **Automated Threat D
 `Python` • `SQL` • `Terraform` • `AWS` • `Splunk` • `Docker` • `Elastic Stack`
 
 ---
-<div style="margin-top: 25px; border: 2px solid #333; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">
-    <embed src="uploads/Kyler_Nats_Resume.pdf" type="application/pdf" width="100%" height="500px" />
+<div style="margin-top: 25px; border: 2px solid #333; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+    <object 
+        data="uploads/Kyler_Nats_Resume.pdf" 
+        type="application/pdf" 
+        width="100%" 
+        height="600px">
+        <p>It looks like your browser doesn't support embedded PDFs. 
+           <a href="uploads/Kyler_Nats_Resume.pdf">Click here to view my resume instead.</a>
+        </p>
+    </object>
 </div>
 '''
 
