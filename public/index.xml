@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Kyler Nats | Cybersecurity Portfolio</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Kyler Nats | Cybersecurity Portfolio</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;h2 id=&#34;project-1-offensive-security--pentesting-lab&#34;&gt;Project 1: Offensive Security &amp;amp; Pentesting Lab&lt;/h2&gt;
+&lt;p&gt;I built a dedicated virtual environment to practice the full lifecycle of a cyberattack, from initial reconnaissance to gaining root access.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What I accomplished:&lt;/strong&gt;
+I stood up a &lt;strong&gt;Kali Linux&lt;/strong&gt; attack machine and targeted a vulnerable Linux server. I performed a full penetration test using industry-standard tools like &lt;strong&gt;nmap&lt;/strong&gt;, &lt;strong&gt;dmitry&lt;/strong&gt;, and &lt;strong&gt;Nessus&lt;/strong&gt; to identify weak points, eventually using &lt;strong&gt;Metasploit&lt;/strong&gt; to exploit a backdoor in the &lt;strong&gt;vsFTPd&lt;/strong&gt; service.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hello World</title>
+      <link>http://localhost:1313/posts/hello-world/</link>
+      <pubDate>Wed, 18 Feb 2026 21:28:57 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lessons Learned</title>
+      <link>http://localhost:1313/lessons-learned/</link>
+      <pubDate>Wed, 18 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/lessons-learned/</guid>
+      <description>&lt;p&gt;Working on these security simulations taught me that theory is very different from practice. I decided to build these labs because I wanted to see how vulnerabilities actually look when you are the one finding and fixing them.&lt;/p&gt;
+&lt;p&gt;One of the biggest takeaways for me was seeing how dangerous legacy software can be. I found that old services like vsftpd often have known backdoors that give an attacker full control almost instantly. It made me realize that keeping systems updated is not just a chore but a critical part of defense.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;kyler-nats&#34;&gt;Kyler Nats&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Cybersecurity Professional | M.S. in MIS Candidate | AWS CCP&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I am currently working toward my masters degree in Management Information Systems at the University of Arizona. My main focus is on cybersecurity and cloud security. I have a strong interest in solving technical problems and I enjoy the challenge of figuring out how systems work and how to keep them safe.&lt;/p&gt;
+&lt;p&gt;My background includes time spent as a cybersecurity analyst at FirstBank. During that internship I monitored security alerts and used tools like Splunk and Crowdstrike to investigate potential threats. I also helped manage user access and resolved security requests for thousands of employees. This experience gave me a great look at how a professional security team operates on a daily basis.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Professional Resume</title>
+      <link>http://localhost:1313/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resume/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/uploads/Kyler_Nats_Resume.pdf&#34;&gt;Download My Full Resume (PDF)&lt;/a&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;I believe my blend of academic learning and real world experience makes me a strong candidate for security roles. I have worked in a security operations center and I am comfortable using professional tools to track down malicious behavior. My goal is to find a role where I can help a company stay secure while continuing to grow my technical skills.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

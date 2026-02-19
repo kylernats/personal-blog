@@ -1,0 +1,7 @@
+/* This forces the image to keep its original proportions */
+.profile_inner img {
+    width: 150px !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+}
