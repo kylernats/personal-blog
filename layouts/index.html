@@ -1,28 +1,32 @@
 {{ define "main" }}
 <style>
+    /* Using CSS Grid for precise control over column widths */
     .command-center {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 20px;
+        display: grid;
+        grid-template-columns: 320px 1fr; /* Fixed left width, expansive right */
+        gap: 40px;
         margin-top: 20px;
         width: 100%;
+        align-items: stretch;
     }
-    /* Left side is now smaller to allow the resume to expand */
-    .left-panel { flex: 0.8; } 
     
-    /* Right side is now much wider */
-    .right-panel { flex: 3; } 
+    .left-panel {
+        padding-top: 10px;
+    }
 
+    /* Social Icons with dynamic color inversion for dark/light mode */
     .social-icons {
         display: flex;
         gap: 15px;
-        margin: 10px 0 25px 0;
+        margin: 15px 0 25px 0;
     }
     .social-icons img {
-        width: 24px;
-        height: 24px;
-        filter: brightness(var(--primary-brightness)); /* Adapts to dark/light mode */
+        width: 26px;
+        height: 26px;
+    }
+    /* GitHub specific filter to ensure visibility on both dark and light themes */
+    .gh-icon {
+        filter: invert(var(--theme-invert, 0)); 
     }
 
     .research-card {
@@ -35,38 +39,51 @@
         transition: transform 0.2s ease;
     }
     .research-card:hover { transform: translateX(5px); }
+
+    /* Resume container set to fill available height with no bottom gap */
+    .right-panel {
+        width: 100%;
+    }
+    .resume-wrapper {
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        height: 92vh; /* Fills the screen height to avoid extra bottom spacing */
+    }
 </style>
 
 <div class="command-center">
   <div class="left-panel">
-    <h1 style="font-size: 2.2rem; margin-bottom: 0;">Kyler Nats</h1>
-    <p style="font-size: 1rem; color: var(--secondary); margin-bottom: 10px;">MS in MIS Student @ The University of Arizona</p>
+    <h1 style="font-size: 2.4rem; margin-bottom: 5px;">Kyler Nats</h1>
+    <p style="font-size: 1.05rem; color: var(--secondary); margin-bottom: 5px;">MS in MIS Student</p>
+    <p style="font-size: 1.05rem; color: var(--secondary);">@ The University of Arizona</p>
     
     <div class="social-icons">
-        <a href="https://linkedin.com/in/kylergenualdi" target="_blank">
+        <a href="https://linkedin.com/in/kylernats/" target="_blank">
             <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn">
         </a>
         <a href="https://github.com/kylernats" target="_blank">
-            <img src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="GitHub">
+            <img class="gh-icon" src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="GitHub">
         </a>
     </div>
 
-    <hr style="border: 0; border-top: 1px solid var(--border); margin-bottom: 20px;">
+    <hr style="border: 0; border-top: 1px solid var(--border); margin-bottom: 25px;">
     
-    <h3 style="font-size: 1.1rem; margin-bottom: 12px;">Latest Research</h3>
+    <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Latest Research</h3>
     <a href="/personal-blog/blog/cmmc-framework/" class="research-card">
-      <h4 style="margin: 0; font-size: 1rem; color: var(--primary);">CMMC 2.0 Framework →</h4>
-      <p style="font-size: 0.8rem; color: var(--secondary); margin-top: 8px;">Exploring federal cybersecurity mandates and supply chain risk.</p>
+      <h4 style="margin: 0; font-size: 1.05rem; color: var(--primary);">CMMC 2.0 Framework →</h4>
+      <p style="font-size: 0.85rem; color: var(--secondary); margin-top: 8px;">Exploring federal cybersecurity mandates and supply chain risk.</p>
     </a>
   </div>
 
   <div class="right-panel">
-    <div style="border: 1px solid var(--border); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+    <div class="resume-wrapper">
         <object 
             data="/personal-blog/uploads/Kyler_Nats_Resume.pdf" 
             type="application/pdf" 
             width="100%" 
-            height="900px">
+            height="100%">
             <p>Your browser doesn't support PDFs. <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf">Download Resume.</a></p>
         </object>
     </div>
