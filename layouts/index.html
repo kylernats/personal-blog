@@ -2,79 +2,97 @@
 <style>
     .command-center {
         display: grid;
-        grid-template-columns: 1fr 1.2fr; /* Slightly widened right side to let resume scale up */
+        grid-template-columns: 1fr 1fr; /* Symmetrical 50/50 split */
         gap: 60px;
         margin-top: 40px;
         align-items: flex-start;
     }
     
-    /* Header Section */
-    .header-group {
+    /* Typography & Header */
+    .header-area {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin-bottom: 0px;
+        align-items: flex-end;
+        margin-bottom: 5px;
     }
-
-    .name-title h1 {
-        font-size: 3rem;
+    .header-area h1 {
+        font-size: 3.2rem;
         margin: 0;
-        line-height: 1;
-        letter-spacing: -1.5px;
         color: var(--primary);
+        letter-spacing: -1.5px;
     }
-
-    .social-icons {
+    .social-links {
         display: flex;
         gap: 15px;
+        padding-bottom: 10px;
     }
-    .social-icons img {
+    .social-links img {
         width: 26px;
         height: 26px;
         transition: transform 0.2s ease;
     }
-    .social-icons img:hover { transform: scale(1.1); }
-    
+    .social-links img:hover { transform: translateY(-3px); }
     .gh-icon { filter: invert(var(--theme-invert, 1)); }
 
-    .sub-title {
-        font-size: 1.15rem;
+    .tagline {
+        font-size: 1.1rem;
         color: var(--secondary);
-        margin: 15px 0 0 0;
+        margin: 10px 0 25px 0;
     }
 
-    .research-card {
-        padding: 22px;
-        border-left: 6px solid #AB0520;
-        border-radius: 8px;
+    /* Professional Content Cards */
+    .content-section h3 {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #AB0520; /* UA Red */
+        margin-bottom: 15px;
+    }
+
+    .feature-card {
+        padding: 25px;
         background: var(--tertiary);
+        border-radius: 12px;
+        border: 1px solid var(--border);
         text-decoration: none !important;
         display: block;
-        margin-top: 30px;
+        transition: all 0.3s ease;
+    }
+    .feature-card:hover {
+        border-color: #AB0520;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
 
-    /* RIGHT SIDE: Scaled Resume Frame */
-    .resume-frame {
+    /* Resume Architecture */
+    .resume-viewport {
         width: 100%;
-        height: 840px; /* Increased to fill the bottom blank space and allow horizontal widening */
+        height: 750px; /* Perfectly balances the bio/research height */
         border: 1px solid var(--border);
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-        pointer-events: none; /* Prevents inner scrolling */
+        box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+        pointer-events: none; /* Disables internal scroll */
     }
-
     object { width: 100%; height: 100%; display: block; }
+
+    .cta-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #AB0520;
+        color: white !important;
+        border-radius: 6px;
+        font-weight: bold;
+        text-decoration: none;
+    }
 </style>
 
 <div class="command-center">
   <div class="left-panel">
-    <div class="header-group">
-        <div class="name-title">
-            <h1>Kyler Nats</h1>
-        </div>
-        <div class="social-icons">
-            <a href="https://linkedin.com/in/kylergenualdi" target="_blank">
+    <div class="header-area">
+        <h1>Kyler Nats</h1>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/kyler-nats/" target="_blank">
                 <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn">
             </a>
             <a href="https://github.com/kylernats" target="_blank">
@@ -83,29 +101,33 @@
         </div>
     </div>
     
-    <p class="sub-title">MS in MIS Student @ The University of Arizona</p>
+    <p class="tagline">Master of Science in MIS | Cybersecurity Concentration<br>
+    <strong>The University of Arizona</strong></p>
 
-    <hr style="border: 0; border-top: 2px solid var(--border); margin: 30px 0;">
+    <hr style="border: 0; border-top: 1px solid var(--border); margin: 30px 0;">
     
-    <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Latest Research</h3>
-    <a href="/personal-blog/blog/cmmc-framework/" class="research-card">
-      <h4 style="margin: 0; color: var(--primary); font-size: 1.2rem;">CMMC 2.0 Framework Deep Dive →</h4>
-      <p style="font-size: 0.9rem; color: var(--secondary); margin-top: 12px;">Analyzing federal cybersecurity mandates and Department of Defense supply chain risk management.</p>
-    </a>
+    <div class="content-section">
+        <h3>Featured Research</h3>
+        <a href="/personal-blog/blog/cmmc-framework/" class="feature-card">
+            <h4 style="margin: 0; color: var(--primary); font-size: 1.3rem;">Decoding CMMC 2.0 →</h4>
+            <p style="margin: 15px 0 0 0; color: var(--secondary); font-size: 0.95rem; line-height: 1.6;">
+                An in-depth analysis of federal cybersecurity mandates and Department of Defense supply chain risk management.
+            </p>
+        </a>
+        
+        <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf" target="_blank" class="cta-button">
+            Download Full Resume (PDF)
+        </a>
+    </div>
   </div>
 
   <div class="right-panel">
-    <div class="resume-frame">
+    <div class="resume-viewport">
         <object 
             data="/personal-blog/uploads/Kyler_Nats_Resume.pdf#toolbar=0&navpanes=0&view=FitH" 
             type="application/pdf">
         </object>
     </div>
-    <p style="text-align: center; margin-top: 20px;">
-        <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf" target="_blank" style="color: #AB0520; font-weight: bold; text-decoration: none; font-size: 1rem;">
-            Open Full Resume &rarr;
-        </a>
-    </p>
   </div>
 </div>
 {{ end }}
