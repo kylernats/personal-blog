@@ -12,6 +12,8 @@ A technical deep-dive into replacing manual cloud configuration with a secure, i
 
 This project transitioned a manual workflow into a repeatable, version-controlled architecture, ensuring that every security group rule and subnet association is documented as code. By architecting a custom Virtual Private Cloud (VPC), I established a baseline for secure cloud operations that eliminates the risks of manual misconfiguration. The result is a functional, hardened web server environment that serves as the scalable foundation for future security labs.
 
+---
+
 ## Technical Deep Dive: Problems & Fixes
 
 ### Problem 1: Subnet Connectivity

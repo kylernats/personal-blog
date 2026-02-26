@@ -11,6 +11,8 @@ An engineering deep-dive into building a high-performance Retrieval-Augmented Ge
 
 This project engineered a scalable solution for AI-driven data retrieval, allowing a chatbot to provide accurate, source-backed answers from a sprawling Amazon product dataset. By moving away from local file processing and implementing a DuckDB streaming architecture, I ensured the system could handle enterprise-scale data without crashing under memory constraints. The final architecture is fully isolated within a VPC, ensuring that sensitive data remains invisible to the public internet while remaining highly accessible to the internal API.
 
+---
+
 ## Technical Deep Dive: Problems & Fixes
 
 ### Problem 1: Memory Overload & System Crashes

@@ -6,8 +6,34 @@ layout: "page"
 # Kyler Nats
 **Cybersecurity Professional | M.S. in MIS Candidate | AWS CCP**
 
-I am currently working toward my masters degree in Management Information Systems at the University of Arizona. My main focus is on cybersecurity and cloud security. I have a strong interest in solving technical problems and I enjoy the challenge of figuring out how systems work and how to keep them safe.
+A cybersecurity professional and graduate researcher specializing in cloud security, incident response, and NIST-based risk management.
 
-My background includes time spent as a cybersecurity analyst at FirstBank. During that internship I monitored security alerts and used tools like Splunk and Crowdstrike to investigate potential threats. I also helped manage user access and resolved security requests for thousands of employees. This experience gave me a great look at how a professional security team operates on a daily basis.
+---
 
-Right now I am working as a graduate research assistant for the MIS department where I get to work with Elasticsearch and complete a full risk management on our computer lab, adhering to the NIST 800-53 framework. I also hold an AWS Cloud Practitioner certification which has helped me understand how to apply security principles in a cloud environment.
+## Professional Profile
+I am currently pursuing a Master of Science in Management Information Systems at the University of Arizona, with a concentration in cybersecurity. I enjoy the technical challenge of building secure systems and figuring out how to defend them against modern threats. My goal is to combine my background in security operations with my research in risk management to help organizations build resilient infrastructure.
+
+---
+
+## Technical Experience & Impact
+
+### Security Operations (SOC)
+During my internship at FirstBank, I served as a cybersecurity analyst monitoring enterprise-wide security alerts. I gained hands-on experience using industry-standard tools like Splunk and Crowdstrike to investigate threats. I also managed user access and resolved security requests for over 2,500 employees, which taught me how professional security teams handle high-volume operations.
+
+### Graduate Research & Compliance
+As a Graduate Research Assistant for the University of Arizona MIS department, I am currently leading a risk assessment for the McKeever Lab. This project involves a deep-dive into the NIST 800-53 framework to ensure our computer labs meet federal and university security standards. I also utilize Elasticsearch to manage and analyze large datasets within our research environment.
+
+### Cloud Security & Infrastructure
+Holding the AWS Certified Cloud Practitioner certification has given me a strong foundation in cloud-native security. I focus on applying security principles—like IAM roles and VPC isolation—to cloud environments to prevent misconfigurations and data exposure. I enjoy using Terraform to automate these security layers as code.
+
+### Technical Toolkit
+
+**Security Tools:** Splunk (SIEM), Crowdstrike (EDR), Proofpoint, Nessus.
+
+**Cloud & DevSecOps:** AWS, Terraform, Docker, GitHub Actions.
+
+**Frameworks:** NIST 800-53, CMMC 2.0.
+
+**Data & Code:** Elasticsearch, Python, SQL, Linux (CLI).
+
+---

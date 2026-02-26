@@ -12,6 +12,8 @@ A technical deep-dive into engineering a containerized, high-performance portfol
 
 This project moved beyond simple web design to focus on the infrastructure required to host a professional cybersecurity brand. By using Docker, I created an isolated environment that ensures the site runs identically on my local machine and the production server, eliminating "it works on my machine" errors. The final architecture serves as a low-latency, secure platform to showcase my technical labs and research.
 
+---
+
 ## Technical Deep Dive: Problems & Fixes
 
 ### Problem 1: Port Collision & Ghost Processes

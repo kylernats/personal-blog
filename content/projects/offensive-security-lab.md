@@ -10,6 +10,8 @@ A segregated, high-fidelity virtual laboratory used to simulate the end-to-end l
 ## Project Impact & Core Functionality
 This lab environment allowed for the safe execution of offensive security tactics against a hardened Linux target, bridging the gap between theoretical knowledge and technical application. By utilizing a Kali Linux attack vector, I successfully mapped the target's attack surface and executed a series of exploits to gain unauthorized access. The project concludes with a full post-exploitation analysis, demonstrating how weak service configurations and poor credential management lead to total system compromise.
 
+---
+
 ## Technical Deep Dive: Problems & Fixes
 
 ### Problem 1: Reconnaissance Noise & Data Gaps
