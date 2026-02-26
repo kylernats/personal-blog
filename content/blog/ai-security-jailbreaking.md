@@ -8,7 +8,7 @@ Artificial Intelligence tools are powerful. But like any system, they can be man
 
 ---
 
-## What Is Prompt Injection?
+### What Is Prompt Injection?
 
 Prompt injection happens when someone hides malicious instructions inside input data to trick an AI system.
 
@@ -35,7 +35,7 @@ Think of it as hiding a secret command inside a normal message.
 
 ---
 
-## What Is Jailbreaking?
+### What Is Jailbreaking?
 
 Jailbreaking is when someone tries to bypass the AI’s safety rules directly.
 
@@ -66,7 +66,7 @@ Think of it as trying to talk your way past security.
 
 ---
 
-## Side-by-Side Comparison
+### Side-by-Side Comparison
 
 | Prompt Injection | Jailbreaking |
 |------------------|--------------|
@@ -77,7 +77,7 @@ Think of it as trying to talk your way past security.
 
 ---
 
-## Simple Analogy
+### Simple Analogy
 
 Think of AI like a secure office building.
 
@@ -88,7 +88,7 @@ Both are attacks. They just use different methods.
 
 ---
 
-## Why This Matters
+### Why This Matters
 
 If you are studying cybersecurity or AI security, understanding this difference is important.
 
@@ -105,16 +105,16 @@ Understanding these concepts helps you:
 
 ---
 
-## Final Summary
+### Final Summary
 
 - **Prompt Injection** hides malicious instructions inside input data.  
 - **Jailbreaking** attempts to break the AI’s safety rules directly.  
 
-Knowing the difference gives you a strong foundation in AI security.
-
 ---
 
-**Watch this in action:** The following video demonstrates how a hacker uses direct prompt injection to trick an AI shopping assistant into revealing hidden administrative secrets.
+### Watch this in action:
+
+The following video demonstrates how a hacker uses direct prompt injection to trick an AI shopping assistant into revealing hidden administrative secrets.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nuTrf3oHtX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
