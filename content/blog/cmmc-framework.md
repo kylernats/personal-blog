@@ -5,7 +5,7 @@ showToc: true
 ---
 
 
-As a Master's student deeply immersed in cybersecurity frameworks, I've been particularly focused on CMMC 2.0. It's more than just another set of controls; it represents a critical shift in how the Department of Defense (DoD) manages supply chain risk. For any organization looking to engage with the DIB, understanding this framework isn't just about compliance, it's about operational strategy and survival.
+As a Master's student immersed in cybersecurity frameworks, I've been particularly focused on CMMC 2.0. It's more than just another set of controls, it represents a critical shift in how the Department of Defense (DoD) manages supply chain risk. For any organization looking to engage with the DIB, understanding this framework isn't just about compliance, it's about operational strategy.
 
 What is CMMC 2.0?
 At its core, CMMC 2.0 is the DoD's answer to pervasive cyber vulnerabilities across its supply chain. It's a verification program designed to ensure that defense contractors are adequately protecting sensitive unclassified information. Rather than simply relying on contractors to say they're secure, CMMC 2.0 mandates actual proof.
