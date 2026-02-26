@@ -1,24 +1,97 @@
-<header style="text-align: center; margin-bottom: 40px;">
-  <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Kyler Nats</h1>
-  <p style="font-size: 1.1rem; color: var(--secondary);">Cybersecurity Professional | M.S. in MIS Candidate | AWS CCP</p>
-  
-  <div style="display: flex; justify-content: center; gap: 20px; margin-top: 15px;">
-    <a href="https://linkedin.com/in/kyler-nats/" target="_blank" style="color: var(--primary); text-decoration: none;">LinkedIn</a>
-    <a href="https://github.com/kylernats" target="_blank" style="color: var(--primary); text-decoration: none;">GitHub</a>
-    <a href="mailto:knats@arizona.edu" style="color: var(--primary); text-decoration: none;">Email</a>
+{{ define "main" }}
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        mermaid.initialize({ 
+            startOnLoad: true, 
+            theme: 'dark',
+            securityLevel: 'loose'
+        });
+    });
+</script>
+
+<style>
+    .command-center {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 60px;
+        margin-top: 40px;
+        align-items: flex-start;
+    }
+    
+    .header-group { display: flex; justify-content: space-between; align-items: center; }
+    .name-title h1 { font-size: 3rem; margin: 0; letter-spacing: -1.5px; color: var(--primary); }
+    .social-icons { display: flex; gap: 15px; }
+    .social-icons img { width: 26px; height: 26px; }
+    .gh-icon { filter: invert(var(--theme-invert, 1)); }
+
+    .research-card {
+        padding: 22px;
+        border-left: 6px solid #AB0520;
+        border-radius: 8px;
+        background: var(--tertiary);
+        text-decoration: none !important;
+        display: block;
+        margin-top: 30px;
+    }
+
+    /* Attack Surface Dashboard */
+    .mermaid-container {
+        width: 100%;
+        background: #1a1a1a;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<div class="command-center">
+  <div class="left-panel">
+    <div class="header-group">
+        <div class="name-title"><h1>Kyler Nats</h1></div>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/kyler-nats/" target="_blank">
+                <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/kylernats" target="_blank">
+                <img class="gh-icon" src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="GitHub">
+            </a>
+        </div>
+    </div>
+    <p style="font-size: 1.15rem; color: var(--secondary); margin-top: 15px;">MS in MIS Student @ The University of Arizona</p>
+    <hr style="border: 0; border-top: 2px solid var(--border); margin: 30px 0;">
+    
+    <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Latest Research</h3>
+    <a href="/personal-blog/blog/cmmc-framework/" class="research-card">
+      <h4 style="margin: 0; color: var(--primary); font-size: 1.2rem;">Decoding the CMMC 2.0 Framework →</h4>
+      <p style="font-size: 0.9rem; color: var(--secondary); margin-top: 12px;">Exploring federal cybersecurity mandates and supply chain risk.</p>
+    </a>
   </div>
-</header>
 
-<div class="research-section" style="max-width: 800px; margin: 0 auto;">
-  <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Latest Research</h3>
-  
-  <a href="/personal-blog/blog/cmmc-framework/" class="research-card" style="display: block; text-decoration: none; border: 1px solid #333; padding: 20px; border-radius: 8px;">
-    <h4 style="margin: 0; color: var(--primary); font-size: 1.2rem;">Navigating the CMMC 2.0 Framework →</h4>
-    <p style="font-size: 0.9rem; color: var(--secondary); margin-top: 12px;">Exploring federal cybersecurity mandates and supply chain risk.</p>
-  </a>
+  <div class="right-panel">
+    <h3 style="margin: 0 0 20px 0; font-size: 1.2rem; text-transform: uppercase; color: #AB0520;">Attack Surface: Ransomware Lifecycle</h3>
+    <div class="mermaid-container">
+        <pre class="mermaid">
+            graph TD
+            A[Initial Access] --> B(Phishing Campaign)
+            A --> C(Exploit Public App)
+            B --> D[Lateral Movement]
+            C --> D
+            D --> E(Credential Access)
+            E --> F[Data Exfiltration]
+            F --> G{Ransomware Encryption}
+            style G fill:#AB0520,stroke:#333,stroke-width:2px,color:#fff
+            style A fill:#001C48,color:#fff
+        </pre>
+    </div>
+    <p style="margin-top: 20px; font-size: 0.85rem; color: var(--secondary); font-style: italic;">
+        Live-coded Mermaid.js visualization showing the attacker's progression.
+    </p>
+  </div>
 </div>
-
-<div style="margin-top: 40px; text-align: center;">
-  <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Attack Surface: Ransomware Lifecycle</h3>
-  
-</div>
+{{ end }}
