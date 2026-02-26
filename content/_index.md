@@ -1,4 +1,9 @@
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; margin-top: 20px; font-family: sans-serif;">
+---
+title: "Home"
+layout: "page"
+---
+
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; margin-top: 20px;">
 
   <div style="flex: 1;">
     <h1 style="font-size: 2.5rem; margin-bottom: 5px; color: #001C48;">Kyler Nats</h1>
@@ -12,7 +17,7 @@
     <hr style="border: 0; border-top: 2px solid #001C48; margin-bottom: 25px;">
     
     <h3 style="color: #001C48; margin-bottom: 15px;">Security Stack</h3>
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 30px; background: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #eee;">
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 30px; background: #f9f9f9; padding: 15px; border-radius: 8px;">
         <div style="text-align: center;">
             <img src="https://cdn.worldvectorlogo.com/logos/splunk.svg" width="35" alt="Splunk">
             <p style="font-size: 10px; margin-top: 5px;">Splunk</p>
