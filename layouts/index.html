@@ -1,6 +1,14 @@
 {{ define "main" }}
 <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        mermaid.initialize({ 
+            startOnLoad: true, 
+            theme: 'dark',
+            securityLevel: 'loose'
+        });
+    });
+</script>
 
 <style>
     .command-center {
@@ -30,11 +38,15 @@
     /* Attack Surface Dashboard */
     .mermaid-container {
         width: 100%;
-        background: #1a1a1a; /* Dark background for the diagram */
+        background: #1a1a1a;
         border: 1px solid var(--border);
         border-radius: 12px;
-        padding: 20px;
+        padding: 30px;
         box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
 
@@ -64,21 +76,21 @@
   <div class="right-panel">
     <h3 style="margin: 0 0 20px 0; font-size: 1.2rem; text-transform: uppercase; color: #AB0520;">Attack Surface: Ransomware Lifecycle</h3>
     <div class="mermaid-container">
-        <div class="mermaid">
+        <pre class="mermaid">
             graph TD
             A[Initial Access] --> B(Phishing Campaign)
-            A --> C(Exploit Public Facing App)
+            A --> C(Exploit Public App)
             B --> D[Lateral Movement]
             C --> D
             D --> E(Credential Access)
             E --> F[Data Exfiltration]
             F --> G{Ransomware Encryption}
             style G fill:#AB0520,stroke:#333,stroke-width:2px,color:#fff
-        </div>
+            style A fill:#001C48,color:#fff
+        </pre>
     </div>
-    
     <p style="margin-top: 20px; font-size: 0.85rem; color: var(--secondary); font-style: italic;">
-        Live-coded Mermaid.js visualization of an attacker's movement from entry to encryption.
+        Live-coded Mermaid.js visualization showing the attacker's progression.
     </p>
   </div>
 </div>
