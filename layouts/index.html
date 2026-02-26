@@ -1,48 +1,88 @@
 {{ define "main" }}
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; margin-top: 20px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
-
-  <div style="flex: 1;">
-    <h1 style="font-size: 2.5rem; margin-bottom: 5px; color: #001C48;">Kyler Nats</h1>
-    <p style="font-size: 1.1rem; color: #888; margin-bottom: 20px;">MS in MIS Student @ The University of Arizona</p>
+<style>
+    .command-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        margin-top: 30px;
+        color: var(--content); /* Adapts to PaperMod dark/light mode */
+    }
+    .left-panel { flex: 1; }
+    .right-panel { flex: 1.5; }
     
-    <div style="margin-bottom: 25px;">
-        <a href="https://linkedin.com/in/kyler-nats" style="color: #AB0520; text-decoration: none; font-weight: bold;">LinkedIn</a> | 
-        <a href="https://github.com/kylernats" style="color: #AB0520; text-decoration: none; font-weight: bold;">GitHub</a>
+    .ua-blue { color: #001C48; }
+    .ua-red { color: #AB0520 !important; font-weight: bold; text-decoration: none; }
+    .ua-red:hover { text-decoration: underline; }
+
+    .stack-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        margin: 20px 0 30px 0;
+        background: rgba(255, 255, 255, 0.05); /* Subtle contrast */
+        padding: 20px;
+        border-radius: 12px;
+        border: 1px solid rgba(128, 128, 128, 0.2);
+    }
+    .stack-item { text-align: center; }
+    .stack-item img { width: 35px; height: 35px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+    .stack-item p { font-size: 11px; margin-top: 8px; color: var(--secondary); }
+
+    .research-card {
+        padding: 20px;
+        border-left: 5px solid #AB0520;
+        border-radius: 8px;
+        background: var(--tertiary);
+        transition: transform 0.2s ease;
+        text-decoration: none !important;
+        display: block;
+    }
+    .research-card:hover { transform: translateX(5px); }
+</style>
+
+<div class="command-center">
+  <div class="left-panel">
+    <h1 style="font-size: 3rem; margin-bottom: 0;">Kyler Nats</h1>
+    <p style="font-size: 1.2rem; color: var(--secondary);">MS in MIS Student @ The University of Arizona</p>
+    
+    <div style="margin: 15px 0 25px 0;">
+        <a href="https://linkedin.com/in/kyler-nats" class="ua-red">LinkedIn</a> 
+        <span style="color: var(--secondary);"> | </span>
+        <a href="https://github.com/kylernats" class="ua-red">GitHub</a>
     </div>
 
-    <hr style="border: 0; border-top: 2px solid #001C48; margin-bottom: 25px;">
+    <hr style="border: 0; border-top: 1px solid var(--border); margin-bottom: 25px;">
     
-    <h3 style="color: #001C48; margin-bottom: 15px;">Security Stack</h3>
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 30px; background: #f9f9f9; padding: 15px; border-radius: 8px;">
-        <div style="text-align: center;">
-            <img src="https://cdn.worldvectorlogo.com/logos/splunk.svg" width="35" alt="Splunk">
-            <p style="font-size: 10px; margin-top: 5px;">Splunk</p>
+    <h3 style="margin-bottom: 15px;">Security Stack</h3>
+    <div class="stack-grid">
+        <div class="stack-item">
+            <img src="https://cdn.worldvectorlogo.com/logos/splunk.svg" alt="Splunk">
+            <p>Splunk</p>
         </div>
-        <div style="text-align: center;">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" width="35" alt="Terraform">
-            <p style="font-size: 10px; margin-top: 5px;">Terraform</p>
+        <div class="stack-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" alt="Terraform">
+            <p>Terraform</p>
         </div>
-        <div style="text-align: center;">
-            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="35" alt="Docker">
-            <p style="font-size: 10px; margin-top: 5px;">Docker</p>
+        <div class="stack-item">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" alt="Docker">
+            <p>Docker</p>
         </div>
-        <div style="text-align: center;">
-            <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" width="35" alt="AWS">
-            <p style="font-size: 10px; margin-top: 5px;">AWS</p>
+        <div class="stack-item">
+            <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="AWS">
+            <p>AWS</p>
         </div>
     </div>
 
-    <h3 style="color: #001C48;">Latest Research</h3>
-    <a href="/personal-blog/blog/cmmc-framework/" style="text-decoration: none; color: inherit;">
-      <div style="padding: 15px; border-left: 5px solid #AB0520; border-radius: 4px; background: #fff; border: 1px solid #eee; box-shadow: 2px 2px 8px rgba(0,0,0,0.05);">
-        <h4 style="margin: 0; color: #001C48;">Decoding the CMMC 2.0 Framework →</h4>
-        <p style="font-size: 0.85rem; color: #555; margin-top: 8px;">Exploring federal cybersecurity mandates and supply chain risk.</p>
-      </div>
+    <h3 style="margin-bottom: 15px;">Latest Research</h3>
+    <a href="/personal-blog/blog/cmmc-framework/" class="research-card">
+      <h4 style="margin: 0; color: var(--primary);">Decoding the CMMC 2.0 Framework →</h4>
+      <p style="font-size: 0.9rem; color: var(--secondary); margin-top: 10px;">Exploring federal cybersecurity mandates and supply chain risk.</p>
     </a>
   </div>
 
-  <div style="flex: 1.4;">
-    <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+  <div class="right-panel">
+    <div style="border: 1px solid var(--border); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
         <object 
             data="/personal-blog/uploads/Kyler_Nats_Resume.pdf" 
             type="application/pdf" 
@@ -52,6 +92,5 @@
         </object>
     </div>
   </div>
-
 </div>
 {{ end }}
