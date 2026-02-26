@@ -1,16 +1,16 @@
 {{ define "main" }}
 <style>
-    /* 70/30 Grid to give the Resume maximum width */
+    /* Force the container to break out of the theme's margins to the right */
     .command-center {
         display: grid;
-        grid-template-columns: 28% 70%; 
-        gap: 2%;
-        margin-top: 10px;
-        width: 100%;
-        align-items: start;
+        grid-template-columns: 300px 1fr; 
+        gap: 30px;
+        margin-top: -10px; /* Pulls it up slightly closer to the header */
+        width: calc(100% + (100vw - 100%) / 2); /* Extends the right side to the screen edge */
+        margin-right: calc((100% - 100vw) / 2);
     }
     
-    .left-panel { padding-right: 10px; }
+    .left-panel { padding-top: 20px; }
 
     .social-icons {
         display: flex;
@@ -19,8 +19,8 @@
     }
     .social-icons img { width: 28px; height: 28px; }
     
-    /* Ensures GitHub is visible on dark backgrounds */
-    .gh-icon { filter: invert(var(--theme-invert, 0.8)); }
+    /* Improved filter for the GitHub icon visibility */
+    .gh-icon { filter: invert(var(--theme-invert, 1)); }
 
     .research-card {
         padding: 15px;
@@ -31,16 +31,13 @@
         display: block;
     }
 
-    /* RIGHT PANEL: Fixed-scale container */
+    /* RIGHT PANEL: Locked aspect ratio and edge-to-edge width */
     .resume-container {
         width: 100%;
-        border: 1px solid var(--border);
-        border-radius: 4px;
+        height: 94vh; /* Fills almost the entire vertical screen to kill the bottom gap */
+        border-left: 1px solid var(--border);
         overflow: hidden;
-        /* Matches the standard aspect ratio of a US Letter PDF to prevent "zoom out" space */
-        height: calc(100vw * 0.7 * 1.29); 
-        max-height: 1100px;
-        background: #525659; /* Standard PDF viewer backdrop color */
+        background: #525659;
     }
 
     object {
@@ -57,7 +54,7 @@
     <p style="font-size: 1rem; color: var(--secondary);">@ The University of Arizona</p>
     
     <div class="social-icons">
-        <a href="https://linkedin.com/in/kylernats/" target="_blank">
+        <a href="https://linkedin.com/in/kyler-nats/" target="_blank">
             <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn">
         </a>
         <a href="https://github.com/kylernats" target="_blank">
