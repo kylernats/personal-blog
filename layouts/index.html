@@ -2,68 +2,68 @@
 <style>
     .command-center {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.1fr; /* Balanced symmetrical split */
         gap: 60px;
-        margin-top: 50px;
+        margin-top: 40px;
         align-items: flex-start;
     }
     
-    /* Refined Header Section */
+    /* Header Section Polish */
     .header-group {
         display: flex;
         justify-content: space-between;
-        align-items: center; /* Aligns icons vertically with the bottom of your name */
-        margin-bottom: 5px;
+        align-items: center;
+        margin-bottom: 0px;
     }
 
     .name-title h1 {
-        font-size: 2.8rem;
+        font-size: 3rem;
         margin: 0;
         line-height: 1;
-        letter-spacing: -1px;
+        letter-spacing: -1.5px;
+        color: var(--primary);
     }
 
     .social-icons {
         display: flex;
-        gap: 12px;
+        gap: 15px;
     }
     .social-icons img {
-        width: 24px;
-        height: 24px;
-        opacity: 0.8;
-        transition: opacity 0.2s ease;
+        width: 26px;
+        height: 26px;
+        transition: transform 0.2s ease;
     }
-    .social-icons img:hover { opacity: 1; }
+    .social-icons img:hover { transform: scale(1.1); }
     
     .gh-icon { filter: invert(var(--theme-invert, 1)); }
 
     .sub-title {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         color: var(--secondary);
-        margin: 10px 0 0 0;
-        font-weight: 400;
+        margin: 15px 0 0 0;
     }
 
     .research-card {
-        padding: 20px;
-        border-left: 5px solid #AB0520;
+        padding: 22px;
+        border-left: 6px solid #AB0520;
         border-radius: 8px;
         background: var(--tertiary);
         text-decoration: none !important;
         display: block;
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
-    /* Resume Snapshot Fix */
-    .resume-snapshot {
+    /* RIGHT SIDE: Scaled Resume Frame */
+    .resume-frame {
         width: 100%;
-        height: 580px; /* Adjusted to perfectly match the left side content height */
+        height: 720px; /* Filled down to balance the left side's height */
         border: 1px solid var(--border);
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        pointer-events: none;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+        pointer-events: none; /* Locks scroll to the main page */
     }
+
     object { width: 100%; height: 100%; display: block; }
 </style>
 
@@ -85,24 +85,24 @@
     
     <p class="sub-title">MS in MIS Student @ The University of Arizona</p>
 
-    <hr style="border: 0; border-top: 1px solid var(--border); margin: 25px 0;">
+    <hr style="border: 0; border-top: 2px solid var(--border); margin: 30px 0;">
     
-    <h3 style="font-size: 1.3rem; margin-bottom: 15px;">Latest Research</h3>
+    <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Latest Research</h3>
     <a href="/personal-blog/blog/cmmc-framework/" class="research-card">
-      <h4 style="margin: 0; color: var(--primary); font-size: 1.1rem;">CMMC 2.0 Framework Deep Dive →</h4>
-      <p style="font-size: 0.85rem; color: var(--secondary); margin-top: 10px;">Analyzing federal cybersecurity mandates and Department of Defense supply chain risk management.</p>
+      <h4 style="margin: 0; color: var(--primary); font-size: 1.2rem;">CMMC 2.0 Framework Deep Dive →</h4>
+      <p style="font-size: 0.9rem; color: var(--secondary); margin-top: 12px;">Analyzing federal cybersecurity mandates and Department of Defense supply chain risk management.</p>
     </a>
   </div>
 
   <div class="right-panel">
-    <div class="resume-snapshot">
+    <div class="resume-frame">
         <object 
             data="/personal-blog/uploads/Kyler_Nats_Resume.pdf#toolbar=0&navpanes=0&view=FitH" 
             type="application/pdf">
         </object>
     </div>
-    <p style="text-align: center; margin-top: 15px;">
-        <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf" target="_blank" style="color: #AB0520; font-weight: bold; text-decoration: none; font-size: 0.9rem;">
+    <p style="text-align: center; margin-top: 20px;">
+        <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf" target="_blank" style="color: #AB0520; font-weight: bold; text-decoration: none; font-size: 1rem;">
             Open Full Resume &rarr;
         </a>
     </p>
