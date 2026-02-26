@@ -30,9 +30,6 @@ theme = "PaperMod"
 
 ---
 
-**Core Technical Skills:**
-`Security Operations` • `Vulnerability Management` • `Cloud Infrastructure & Security` • `DevOps & Automation` • `Information Security Frameworks` • `Security Scripting & Data`
-
 ---
 <div style="margin-top: 25px; border: 2px solid #333; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
     <object 
@@ -59,15 +56,31 @@ theme = "PaperMod"
     name = "About"
     url = "/about/"
     weight = 10
+
 [[menu.main]]
     name = "Resume"
     url = "/resume/"
     weight = 20
+
 [[menu.main]]
     name = "Security Projects"
     url = "/projects/"
     weight = 30
+
+# Main "Blog" Label in Header
 [[menu.main]]
-    name = "Lessons Learned"
-    url = "/lessons-learned/"
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 40
+
+# Dropdown Item for CMMC
+[[menu.main]]
+    parent = "blog"
+    name = "CMMC 2.0 Framework"
+    url = "/blog/cmmc-framework/"
+    weight = 1
+[[menu.main]]
+    name = "Lab Notes"
+    url = "/lab-notes/"
     weight = 40

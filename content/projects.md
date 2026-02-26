@@ -1,6 +1,5 @@
 ---
 title: "Security Projects"
-date: 2026-02-19
 draft: false
 ---
 
