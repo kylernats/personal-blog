@@ -3,38 +3,41 @@ title: "Home"
 layout: "page"
 ---
 
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 40px;">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; margin-top: 20px;">
 
   <div style="flex: 1;">
-    <h1 style="font-size: 3rem; margin-bottom: 0; color: #001C48;">Kyler Nats</h1>
-    <p style="font-size: 1.2rem; color: #888;">MS in MIS Student @ The University of Arizona</p>
+    <h1 style="font-size: 2.5rem; margin-bottom: 5px; color: #001C48;">Kyler Nats</h1>
+    <p style="font-size: 1.1rem; color: #888; margin-bottom: 20px;">MS in MIS Student @ The University of Arizona</p>
     
-    <div style="margin-top: 15px;">
+    <div style="margin-bottom: 25px;">
         <a href="https://linkedin.com/in/kyler-nats" style="color: #AB0520; text-decoration: none; font-weight: bold;">LinkedIn</a> | 
         <a href="https://github.com/kylernats" style="color: #AB0520; text-decoration: none; font-weight: bold;">GitHub</a>
     </div>
 
-    <hr style="margin: 25px 0; border: 0; border-top: 2px solid #001C48;">
+    <hr style="border: 0; border-top: 2px solid #001C48; margin-bottom: 25px;">
     
-    <h3>Latest Research</h3>
-    <a href="/personal-blog/blog/cmmc-framework/" style="text-decoration: none; color: inherit;">
-      <div style="padding: 20px; border-left: 5px solid #AB0520; border-radius: 4px; background: #f9f9f9; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
-        <h4 style="margin: 0; color: #001C48;">Decoding the CMMC 2.0 Framework →</h4>
-        <p style="font-size: 0.9rem; color: #444; margin-top: 10px;">Exploring federal cybersecurity mandates and supply chain risk.</p>
-      </div>
-    </a>
-  </div>
-
-  <div style="flex: 1.5;">
-    <div style="border: 2px solid #001C48; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-        <object 
-            data="/personal-blog/uploads/Kyler_Nats_Resume.pdf" 
-            type="application/pdf" 
-            width="100%" 
-            height="850px">
-            <p>Your browser doesn't support PDFs. <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf">Download my Resume.</a></p>
-        </object>
+    <h3 style="color: #001C48; margin-bottom: 15px;">Security Stack</h3>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-bottom: 30px; background: #f9f9f9; padding: 15px; border-radius: 8px;">
+        <div style="text-align: center;">
+            <img src="https://cdn.worldvectorlogo.com/logos/splunk.svg" width="40" height="40" alt="Splunk" title="Splunk SIEM">
+            <p style="font-size: 10px; margin-top: 5px;">Splunk</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/terraform/terraform-original.svg" width="40" height="40" alt="Terraform" title="Terraform IaC">
+            <p style="font-size: 10px; margin-top: 5px;">Terraform</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="40" height="40" alt="Docker" title="Docker Containerization">
+            <p style="font-size: 10px; margin-top: 5px;">Docker</p>
+        </div>
+        <div style="text-align: center;">
+            <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" width="40" height="40" alt="AWS" title="Amazon Web Services">
+            <p style="font-size: 10px; margin-top: 5px;">AWS</p>
+        </div>
     </div>
-  </div>
 
-</div>
+    <h3 style="color: #001C48;">Latest Research</h3>
+    <a href="/personal-blog/blog/cmmc-framework/" style="text-decoration: none; color: inherit;">
+      <div style="padding: 15px; border-left: 5px solid #AB0520; border-radius: 4px; background: #fdfdfd; box-shadow: 2px 2px 8px rgba(0,0,0,0.05);">
+        <h4 style="margin: 0; color: #001C48;">Decoding the CMMC 2.0 Framework →</h4>
+        <p style="font-size: 0.85
