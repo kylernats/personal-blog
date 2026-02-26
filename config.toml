@@ -3,82 +3,38 @@ languageCode = 'en-us'
 title = 'Kyler Nats | Cybersecurity Portfolio'
 theme = "PaperMod"
 
-# Required for GitHub Actions automated deployment
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
-
-# Security: Required to allow the <object> and <embed> tags for your PDF
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-
 [params]
     env = "production"
     description = "MS in MIS Student @ U of A | Cybersecurity & Cloud Security"
     author = "Kyler Nats"
     
     [params.profileMode]
-        enabled = true
-        title = "Kyler Nats"
-        imageUrl = ""
-        
-        # This is the cleaned-up subtitle without the "bridge the gap" paragraph
-        subtitle = '''
-**MS in MIS Student @ The University of Arizona**
+        enabled = false # Disables centered mode to allow side-by-side layout
 
----
-<div style="margin-top: 25px; border: 2px solid #333; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
-    <object 
-        data="uploads/Kyler_Nats_Resume.pdf" 
-        type="application/pdf" 
-        width="100%" 
-        height="600px">
-        <p>It looks like your browser doesn't support embedded PDFs. 
-           <a href="uploads/Kyler_Nats_Resume.pdf">Click here to view my resume instead.</a>
-        </p>
-    </object>
-</div>
-'''
-
-    [[params.socialIcons]]
-        name = "linkedin"
-        url = "https://linkedin.com/in/kyler-nats"
-    [[params.socialIcons]]
-        name = "github"
-        url = "https://github.com/kylernats"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true # Allows PDF <object> embedding
 
 # Navigation Menu
 [[menu.main]]
     name = "About"
     url = "/about/"
     weight = 10
-
 [[menu.main]]
     name = "Resume"
     url = "/resume/"
     weight = 20
-
 [[menu.main]]
     name = "Security Projects"
     url = "/projects/"
     weight = 30
-
-# Main "Blog" Label in Header
 [[menu.main]]
     identifier = "blog"
     name = "Blog"
     url = "/blog/"
     weight = 40
-
-# Dropdown Item for CMMC
 [[menu.main]]
-    parent = "blog"
-    name = "CMMC 2.0 Framework"
-    url = "/blog/cmmc-framework/"
-    weight = 1
-[[menu.main]]
-    name = "Lab Notes"
-    url = "/lab-notes/"
-    weight = 40
+    name = "Lessons Learned"
+    url = "/lessons-learned/"
+    weight = 50
