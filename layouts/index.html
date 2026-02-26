@@ -2,97 +2,52 @@
 <style>
     .command-center {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Symmetrical 50/50 split */
+        grid-template-columns: 1fr 1.2fr;
         gap: 60px;
         margin-top: 40px;
         align-items: flex-start;
     }
     
-    /* Typography & Header */
-    .header-area {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin-bottom: 5px;
-    }
-    .header-area h1 {
-        font-size: 3.2rem;
-        margin: 0;
-        color: var(--primary);
-        letter-spacing: -1.5px;
-    }
-    .social-links {
-        display: flex;
-        gap: 15px;
-        padding-bottom: 10px;
-    }
-    .social-links img {
-        width: 26px;
-        height: 26px;
-        transition: transform 0.2s ease;
-    }
-    .social-links img:hover { transform: translateY(-3px); }
+    /* Left Panel Styling */
+    .header-group { display: flex; justify-content: space-between; align-items: center; }
+    .name-title h1 { font-size: 3rem; margin: 0; letter-spacing: -1.5px; color: var(--primary); }
+    .social-icons { display: flex; gap: 15px; }
+    .social-icons img { width: 26px; height: 26px; }
     .gh-icon { filter: invert(var(--theme-invert, 1)); }
 
-    .tagline {
-        font-size: 1.1rem;
-        color: var(--secondary);
-        margin: 10px 0 25px 0;
-    }
-
-    /* Professional Content Cards */
-    .content-section h3 {
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #AB0520; /* UA Red */
-        margin-bottom: 15px;
-    }
-
-    .feature-card {
-        padding: 25px;
+    .research-card {
+        padding: 22px;
+        border-left: 6px solid #AB0520;
+        border-radius: 8px;
         background: var(--tertiary);
-        border-radius: 12px;
-        border: 1px solid var(--border);
         text-decoration: none !important;
         display: block;
-        transition: all 0.3s ease;
-    }
-    .feature-card:hover {
-        border-color: #AB0520;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        margin-top: 30px;
     }
 
-    /* Resume Architecture */
-    .resume-viewport {
+    /* Right Panel: Architecture Diagram */
+    .diagram-container {
         width: 100%;
-        height: 750px; /* Perfectly balances the bio/research height */
+        background: var(--tertiary);
         border: 1px solid var(--border);
         border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 15px 45px rgba(0,0,0,0.2);
-        pointer-events: none; /* Disables internal scroll */
+        padding: 30px;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        text-align: center;
     }
-    object { width: 100%; height: 100%; display: block; }
-
-    .cta-button {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 10px 20px;
-        background: #AB0520;
-        color: white !important;
-        border-radius: 6px;
-        font-weight: bold;
-        text-decoration: none;
+    .diagram-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
     }
 </style>
 
 <div class="command-center">
   <div class="left-panel">
-    <div class="header-area">
-        <h1>Kyler Nats</h1>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/kyler-nats/" target="_blank">
+    <div class="header-group">
+        <div class="name-title"><h1>Kyler Nats</h1></div>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/kylergenualdi" target="_blank">
                 <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn">
             </a>
             <a href="https://github.com/kylernats" target="_blank">
@@ -100,33 +55,23 @@
             </a>
         </div>
     </div>
+    <p style="font-size: 1.15rem; color: var(--secondary); margin-top: 15px;">MS in MIS Student @ The University of Arizona</p>
+    <hr style="border: 0; border-top: 2px solid var(--border); margin: 30px 0;">
     
-    <p class="tagline">Master of Science in MIS | Cybersecurity Concentration<br>
-    <strong>The University of Arizona</strong></p>
-
-    <hr style="border: 0; border-top: 1px solid var(--border); margin: 30px 0;">
-    
-    <div class="content-section">
-        <h3>Featured Research</h3>
-        <a href="/personal-blog/blog/cmmc-framework/" class="feature-card">
-            <h4 style="margin: 0; color: var(--primary); font-size: 1.3rem;">Decoding CMMC 2.0 →</h4>
-            <p style="margin: 15px 0 0 0; color: var(--secondary); font-size: 0.95rem; line-height: 1.6;">
-                An in-depth analysis of federal cybersecurity mandates and Department of Defense supply chain risk management.
-            </p>
-        </a>
-        
-        <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf" target="_blank" class="cta-button">
-            Download Full Resume (PDF)
-        </a>
-    </div>
+    <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Latest Research</h3>
+    <a href="/personal-blog/blog/cmmc-framework/" class="research-card">
+      <h4 style="margin: 0; color: var(--primary); font-size: 1.2rem;">Decoding the CMMC 2.0 Framework →</h4>
+      <p style="font-size: 0.9rem; color: var(--secondary); margin-top: 12px;">Exploring federal cybersecurity mandates and supply chain risk.</p>
+    </a>
   </div>
 
   <div class="right-panel">
-    <div class="resume-viewport">
-        <object 
-            data="/personal-blog/uploads/Kyler_Nats_Resume.pdf#toolbar=0&navpanes=0&view=FitH" 
-            type="application/pdf">
-        </object>
+    <h3 style="margin: 0 0 20px 0; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; color: #AB0520;">Systems Architecture</h3>
+    <div class="diagram-container">
+        <img src="/personal-blog/img/pipeline-diagram.png" alt="CI/CD Pipeline Architecture">
+        <p style="margin-top: 20px; font-size: 0.9rem; color: var(--secondary);">
+            Automated CI/CD Pipeline: VS Code → GitHub Actions → Docker Containerization → Hugo Deployment
+        </p>
     </div>
   </div>
 </div>
