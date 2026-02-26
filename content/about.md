@@ -39,7 +39,7 @@ Holding the AWS Certified Cloud Practitioner certification has given me a strong
 
 ### Volunteering
 
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-top: 20px; padding: 25px; background: rgba(255,255,255,0.05); border-radius: 8px;">
   <div style="flex: 2;">
     <h4 style="margin-top: 0; color: #AB0520;">FutureCon Cybersecurity Conference | Phoenix, AZ</h4>
     <p><strong>Role:</strong> Student Volunteer</p>
