@@ -1,4 +1,7 @@
 {{ define "main" }}
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({ startOnLoad: true, theme: 'dark' });</script>
+
 <style>
     .command-center {
         display: grid;
@@ -8,7 +11,6 @@
         align-items: flex-start;
     }
     
-    /* Left Panel Styling */
     .header-group { display: flex; justify-content: space-between; align-items: center; }
     .name-title h1 { font-size: 3rem; margin: 0; letter-spacing: -1.5px; color: var(--primary); }
     .social-icons { display: flex; gap: 15px; }
@@ -25,20 +27,14 @@
         margin-top: 30px;
     }
 
-    /* Right Panel: Architecture Diagram */
-    .diagram-container {
+    /* Attack Surface Dashboard */
+    .mermaid-container {
         width: 100%;
-        background: var(--tertiary);
+        background: #1a1a1a; /* Dark background for the diagram */
         border: 1px solid var(--border);
         border-radius: 12px;
-        padding: 30px;
+        padding: 20px;
         box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        text-align: center;
-    }
-    .diagram-container img {
-        width: 100%;
-        height: auto;
-        border-radius: 4px;
     }
 </style>
 
@@ -47,7 +43,7 @@
     <div class="header-group">
         <div class="name-title"><h1>Kyler Nats</h1></div>
         <div class="social-icons">
-            <a href="https://linkedin.com/in/kylergenualdi" target="_blank">
+            <a href="https://linkedin.com/in/kyler-nats/" target="_blank">
                 <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn">
             </a>
             <a href="https://github.com/kylernats" target="_blank">
@@ -66,13 +62,24 @@
   </div>
 
   <div class="right-panel">
-    <h3 style="margin: 0 0 20px 0; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px; color: #AB0520;">Systems Architecture</h3>
-    <div class="diagram-container">
-        <img src="/personal-blog/img/pipeline-diagram.png" alt="CI/CD Pipeline Architecture">
-        <p style="margin-top: 20px; font-size: 0.9rem; color: var(--secondary);">
-            Automated CI/CD Pipeline: VS Code → GitHub Actions → Docker Containerization → Hugo Deployment
-        </p>
+    <h3 style="margin: 0 0 20px 0; font-size: 1.2rem; text-transform: uppercase; color: #AB0520;">Attack Surface: Ransomware Lifecycle</h3>
+    <div class="mermaid-container">
+        <div class="mermaid">
+            graph TD
+            A[Initial Access] --> B(Phishing Campaign)
+            A --> C(Exploit Public Facing App)
+            B --> D[Lateral Movement]
+            C --> D
+            D --> E(Credential Access)
+            E --> F[Data Exfiltration]
+            F --> G{Ransomware Encryption}
+            style G fill:#AB0520,stroke:#333,stroke-width:2px,color:#fff
+        </div>
     </div>
+    
+    <p style="margin-top: 20px; font-size: 0.85rem; color: var(--secondary); font-style: italic;">
+        Live-coded Mermaid.js visualization of an attacker's movement from entry to encryption.
+    </p>
   </div>
 </div>
 {{ end }}
