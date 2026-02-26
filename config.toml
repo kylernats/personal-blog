@@ -7,33 +7,62 @@ theme = "PaperMod"
     env = "production"
     description = "MS in MIS Student @ U of A | Cybersecurity & Cloud Security"
     author = "Kyler Nats"
-    
     [params.profileMode]
-        enabled = false # Disables centered mode to allow side-by-side layout
+        enabled = false # Critical: Allows your custom home layout to show
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true # Allows PDF <object> embedding
+[markup.goldmark.renderer]
+    unsafe = true # Allows the PDF and HTML to render
 
-# Navigation Menu
+# --- NAVIGATION MENU ---
 [[menu.main]]
     name = "About"
     url = "/about/"
     weight = 10
+
 [[menu.main]]
     name = "Resume"
     url = "/resume/"
     weight = 20
+
+# Security Projects Dropdown
 [[menu.main]]
+    identifier = "projects"
     name = "Security Projects"
     url = "/projects/"
     weight = 30
+[[menu.main]]
+    parent = "projects"
+    name = "Offensive Security Lab"
+    url = "/projects/offensive-security-lab/"
+    weight = 1
+[[menu.main]]
+    parent = "projects"
+    name = "AWS Terraform Infra"
+    url = "/projects/aws-terraform-infra/"
+    weight = 2
+[[menu.main]]
+    parent = "projects"
+    name = "Scalable RAG Chatbot"
+    url = "/projects/rag-chatbot-architecture/"
+    weight = 3
+[[menu.main]]
+    parent = "projects"
+    name = "Portfolio Infrastructure"
+    url = "/projects/portfolio-infrastructure/"
+    weight = 4
+
+# Blog Dropdown
 [[menu.main]]
     identifier = "blog"
     name = "Blog"
     url = "/blog/"
     weight = 40
+[[menu.main]]
+    parent = "blog"
+    name = "CMMC 2.0 Framework"
+    url = "/blog/cmmc-framework/"
+    weight = 1
+
 [[menu.main]]
     name = "Lessons Learned"
     url = "/lessons-learned/"

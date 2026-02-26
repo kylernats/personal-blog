@@ -1,5 +1,6 @@
 ---
 title: "Home"
+layout: "page"
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 40px;">
@@ -31,7 +32,7 @@ title: "Home"
             type="application/pdf" 
             width="100%" 
             height="850px">
-            <p>Your browser doesn't support PDFs. <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf">Download my Resume.</a></p>
+            <p>View <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf">Resume PDF</a></p>
         </object>
     </div>
   </div>
