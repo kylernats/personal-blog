@@ -32,7 +32,7 @@ layout: "page"
             type="application/pdf" 
             width="100%" 
             height="850px">
-            <p>View <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf">Resume PDF</a></p>
+            <p>Your browser doesn't support PDFs. <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf">Download my Resume.</a></p>
         </object>
     </div>
   </div>
