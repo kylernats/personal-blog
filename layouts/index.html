@@ -1,33 +1,26 @@
 {{ define "main" }}
 <style>
-    /* Using CSS Grid for precise control over column widths */
+    /* 70/30 Grid to give the Resume maximum width */
     .command-center {
         display: grid;
-        grid-template-columns: 320px 1fr; /* Fixed left width, expansive right */
-        gap: 40px;
-        margin-top: 20px;
+        grid-template-columns: 28% 70%; 
+        gap: 2%;
+        margin-top: 10px;
         width: 100%;
-        align-items: stretch;
+        align-items: start;
     }
     
-    .left-panel {
-        padding-top: 10px;
-    }
+    .left-panel { padding-right: 10px; }
 
-    /* Social Icons with dynamic color inversion for dark/light mode */
     .social-icons {
         display: flex;
         gap: 15px;
-        margin: 15px 0 25px 0;
+        margin: 10px 0 20px 0;
     }
-    .social-icons img {
-        width: 26px;
-        height: 26px;
-    }
-    /* GitHub specific filter to ensure visibility on both dark and light themes */
-    .gh-icon {
-        filter: invert(var(--theme-invert, 0)); 
-    }
+    .social-icons img { width: 28px; height: 28px; }
+    
+    /* Ensures GitHub is visible on dark backgrounds */
+    .gh-icon { filter: invert(var(--theme-invert, 0.8)); }
 
     .research-card {
         padding: 15px;
@@ -36,28 +29,32 @@
         background: var(--tertiary);
         text-decoration: none !important;
         display: block;
-        transition: transform 0.2s ease;
     }
-    .research-card:hover { transform: translateX(5px); }
 
-    /* Resume container set to fill available height with no bottom gap */
-    .right-panel {
+    /* RIGHT PANEL: Fixed-scale container */
+    .resume-container {
         width: 100%;
-    }
-    .resume-wrapper {
         border: 1px solid var(--border);
-        border-radius: 8px;
+        border-radius: 4px;
         overflow: hidden;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-        height: 92vh; /* Fills the screen height to avoid extra bottom spacing */
+        /* Matches the standard aspect ratio of a US Letter PDF to prevent "zoom out" space */
+        height: calc(100vw * 0.7 * 1.29); 
+        max-height: 1100px;
+        background: #525659; /* Standard PDF viewer backdrop color */
+    }
+
+    object {
+        display: block;
+        width: 100%;
+        height: 100%;
     }
 </style>
 
 <div class="command-center">
   <div class="left-panel">
-    <h1 style="font-size: 2.4rem; margin-bottom: 5px;">Kyler Nats</h1>
-    <p style="font-size: 1.05rem; color: var(--secondary); margin-bottom: 5px;">MS in MIS Student</p>
-    <p style="font-size: 1.05rem; color: var(--secondary);">@ The University of Arizona</p>
+    <h1 style="font-size: 2.5rem; margin-bottom: 0;">Kyler Nats</h1>
+    <p style="font-size: 1rem; color: var(--secondary);">MS in MIS Student</p>
+    <p style="font-size: 1rem; color: var(--secondary);">@ The University of Arizona</p>
     
     <div class="social-icons">
         <a href="https://linkedin.com/in/kylernats/" target="_blank">
@@ -68,22 +65,20 @@
         </a>
     </div>
 
-    <hr style="border: 0; border-top: 1px solid var(--border); margin-bottom: 25px;">
+    <hr style="border: 0; border-top: 1px solid var(--border); margin-bottom: 20px;">
     
     <h3 style="font-size: 1.2rem; margin-bottom: 15px;">Latest Research</h3>
     <a href="/personal-blog/blog/cmmc-framework/" class="research-card">
-      <h4 style="margin: 0; font-size: 1.05rem; color: var(--primary);">CMMC 2.0 Framework →</h4>
-      <p style="font-size: 0.85rem; color: var(--secondary); margin-top: 8px;">Exploring federal cybersecurity mandates and supply chain risk.</p>
+      <h4 style="margin: 0; font-size: 1rem; color: var(--primary);">CMMC 2.0 Framework →</h4>
+      <p style="font-size: 0.8rem; color: var(--secondary); margin-top: 8px;">Exploring federal cybersecurity mandates and supply chain risk.</p>
     </a>
   </div>
 
   <div class="right-panel">
-    <div class="resume-wrapper">
+    <div class="resume-container">
         <object 
-            data="/personal-blog/uploads/Kyler_Nats_Resume.pdf" 
-            type="application/pdf" 
-            width="100%" 
-            height="100%">
+            data="/personal-blog/uploads/Kyler_Nats_Resume.pdf#view=FitH" 
+            type="application/pdf">
             <p>Your browser doesn't support PDFs. <a href="/personal-blog/uploads/Kyler_Nats_Resume.pdf">Download Resume.</a></p>
         </object>
     </div>
