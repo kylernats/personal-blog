@@ -2,13 +2,13 @@
 <style>
     .command-center {
         display: grid;
-        grid-template-columns: 1fr 1.1fr; /* Balanced symmetrical split */
+        grid-template-columns: 1fr 1.2fr; /* Slightly widened right side to let resume scale up */
         gap: 60px;
         margin-top: 40px;
         align-items: flex-start;
     }
     
-    /* Header Section Polish */
+    /* Header Section */
     .header-group {
         display: flex;
         justify-content: space-between;
@@ -56,12 +56,12 @@
     /* RIGHT SIDE: Scaled Resume Frame */
     .resume-frame {
         width: 100%;
-        height: 720px; /* Filled down to balance the left side's height */
+        height: 840px; /* Increased to fill the bottom blank space and allow horizontal widening */
         border: 1px solid var(--border);
         border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-        pointer-events: none; /* Locks scroll to the main page */
+        pointer-events: none; /* Prevents inner scrolling */
     }
 
     object { width: 100%; height: 100%; display: block; }
@@ -74,7 +74,7 @@
             <h1>Kyler Nats</h1>
         </div>
         <div class="social-icons">
-            <a href="https://linkedin.com/in/kyler-nats/" target="_blank">
+            <a href="https://linkedin.com/in/kylergenualdi" target="_blank">
                 <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn">
             </a>
             <a href="https://github.com/kylernats" target="_blank">
