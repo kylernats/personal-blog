@@ -37,20 +37,4 @@ Holding the AWS Certified Cloud Practitioner certification has given me a strong
 **Data & Code:** Elasticsearch, Python, SQL, Linux (CLI).
 
 
-### Volunteering
-
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 30px; margin-top: 20px; padding: 25px; background: rgba(255,255,255,0.05); border-radius: 8px;">
-  <div style="flex: 2;">
-    <h4 style="margin-top: 0; color: #AB0520;">FutureCon Cybersecurity Conference | Phoenix, AZ</h4>
-    <p style="margin-bottom: 15px;"><strong>Role:</strong> Student Volunteer</p>
-    <ul style="padding-left: 20px; margin: 0;">
-      <li style="margin-bottom: 8px;"><strong>Networking:</strong> Connected with industry professionals and vendors to discuss the future of cyber defense.</li>
-      <li><strong>Education:</strong> Attended high-level technical talks on emerging threats and defensive technologies.</li>
-    </ul>
-  </div>
-  <div style="flex: 1; text-align: right;">
-    <img src="img/FuturCon.jpeg" alt="Volunteering at FutureCon Phoenix" style="width: 100%; max-width: 220px; border-radius: 8px; border: 1px solid #444;">
-  </div>
-</div>
-
 ---
