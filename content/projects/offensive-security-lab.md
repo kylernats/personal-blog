@@ -3,6 +3,8 @@ title: "Offensive Security & Pentesting Lab"
 draft: false
 ---
 
+---
+
 A segregated virtual lab used to simulate the end-to-end lifecycle of a cyberattack to identify and mitigate defensive gaps.
 
 ---

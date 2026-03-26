@@ -4,6 +4,8 @@ draft: false
 showToc: true
 ---
 
+---
+
 Artificial Intelligence tools are powerful. But like any system, they can be manipulated. Two common attack types you may hear about are prompt injection and jailbreaking. Let's start by breaking down what each is.
 
 ---

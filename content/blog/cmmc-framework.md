@@ -4,6 +4,8 @@ draft: false
 showToc: true
 ---
 
+---
+
 
 As a Master's student immersed in cybersecurity frameworks, I've been particularly focused on CMMC 2.0. It's more than just another set of controls, it represents a critical shift in how the Department of Defense (DoD) manages supply chain risk. For any organization looking to engage with the DIB, understanding this framework isn't just about compliance, it's about operational strategy.
 

@@ -3,6 +3,8 @@ title: "Scalable RAG Chatbot Architecture"
 draft: false
 ---
 
+---
+
 I built a high-performance Retrieval-Augmented Generation (RAG) pipeline designed to securely query massive datasets using vector embeddings and cloud-native architecture.
 
 ---

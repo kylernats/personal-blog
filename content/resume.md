@@ -7,7 +7,7 @@ I believe my blend of academic learning and real world experience makes me a str
 
 ---
 
-[Download My Full Resume (PDF)](../uploads/Kyler_Nats_Resume.pdf)
+[Download My Full Resume (PDF)](../uploads/KylerNats.pdf)
 
 <div style="margin-top: 20px; border: 1px solid #444; border-radius: 8px; overflow: hidden;">
     <object 
