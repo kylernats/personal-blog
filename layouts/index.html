@@ -1,60 +1,59 @@
 {{ define "main" }}
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        mermaid.initialize({ 
-            startOnLoad: true, 
-            theme: 'dark',
-            securityLevel: 'loose'
-        });
-    });
-</script>
-
 <style>
-    .command-center {
-        display: grid;
-        grid-template-columns: 1fr 1.2fr;
-        gap: 60px;
-        margin-top: 40px;
-        align-items: flex-start;
+    .hero-container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        padding: 60px 0;
+        border-bottom: 1px solid var(--border);
     }
     
-    .header-group { display: flex; justify-content: space-between; align-items: center; }
-    .name-title h1 { font-size: 3rem; margin: 0; letter-spacing: -1.5px; color: var(--primary); }
-    .social-icons { display: flex; gap: 15px; }
-    .social-icons img { width: 26px; height: 26px; }
-    .gh-icon { filter: invert(var(--theme-invert, 1)); }
-
-    .research-card {
-        padding: 22px;
-        border-left: 6px solid #AB0520;
-        border-radius: 8px;
-        background: var(--tertiary);
-        text-decoration: none !important;
-        display: block;
-        margin-top: 30px;
+    .headshot {
+        width: 180px;
+        height: 180px;
+        border-radius: 12px;
+        object-fit: cover;
+        border: 2px solid #AB0520;
     }
 
-    /* Attack Surface Dashboard */
-    .mermaid-container {
-        width: 100%;
-        background: #1a1a1a;
-        border: 1px solid var(--border);
+    .hero-text h1 { font-size: 3.5rem; margin: 0; color: var(--primary); letter-spacing: -1.5px; }
+    .hero-text p { font-size: 1.2rem; color: var(--secondary); margin-top: 5px; }
+
+    .social-links { display: flex; gap: 15px; margin-top: 20px; }
+    .social-links a img { width: 26px; }
+    .gh-icon { filter: invert(var(--theme-invert, 1)); }
+
+    .video-section {
+        margin-top: 50px;
+        max-width: 900px; /* Centers the content better */
+    }
+
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
         border-radius: 12px;
-        padding: 30px;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        min-height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        overflow: hidden;
+        background: #000;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
     }
 </style>
 
-<div class="command-center">
-  <div class="left-panel">
-    <div class="header-group">
-        <div class="name-title"><h1>Kyler Nats</h1></div>
-        <div class="social-icons">
+<div class="hero-container">
+    <img src="/img/headshot.jpg" alt="Kyler Nats" class="headshot">
+    <div class="hero-text">
+        <h1>Kyler Nats</h1>
+        <p>Master of Science in MIS @ University of Arizona</p>
+        <div class="social-links">
             <a href="https://linkedin.com/in/kyler-nats/" target="_blank">
                 <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn">
             </a>
@@ -63,35 +62,15 @@
             </a>
         </div>
     </div>
-    <p style="font-size: 1.15rem; color: var(--secondary); margin-top: 15px;">MS in MIS Student @ The University of Arizona</p>
-    <hr style="border: 0; border-top: 2px solid var(--border); margin: 30px 0;">
-    
-    <h3 style="font-size: 1.4rem; margin-bottom: 15px;">Latest Research</h3>
-    <a href="/personal-blog/blog/cmmc-framework/" class="research-card">
-      <h4 style="margin: 0; color: var(--primary); font-size: 1.2rem;">Decoding the CMMC 2.0 Framework →</h4>
-      <p style="font-size: 0.9rem; color: var(--secondary); margin-top: 12px;">Exploring federal cybersecurity mandates and supply chain risk.</p>
-    </a>
-  </div>
+</div>
 
-  <div class="right-panel">
-    <h3 style="margin: 0 0 20px 0; font-size: 1.2rem; text-transform: uppercase; color: #AB0520;">Attack Surface: Ransomware Lifecycle</h3>
-    <div class="mermaid-container">
-        <pre class="mermaid">
-            graph TD
-            A[Initial Access] --> B(Phishing Campaign)
-            A --> C(Exploit Public App)
-            B --> D[Lateral Movement]
-            C --> D
-            D --> E(Credential Access)
-            E --> F[Data Exfiltration]
-            F --> G{Ransomware Encryption}
-            style G fill:#AB0520,stroke:#333,stroke-width:2px,color:#fff
-            style A fill:#001C48,color:#fff
-        </pre>
+<div class="video-section">
+    <h3 style="margin-bottom: 20px; font-size: 1.2rem; color: var(--primary);">Security Breakdown: Chrome Password Security</h3>
+    <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/Gy2bAcMD3bs" allowfullscreen></iframe>
     </div>
-    <p style="margin-top: 20px; font-size: 0.85rem; color: var(--secondary); font-style: italic;">
-        Live-coded Mermaid.js visualization showing the attacker's progression.
+    <p style="margin-top: 20px; line-height: 1.6; color: var(--secondary);">
+        Technical demonstration of credential access vulnerabilities and mitigation strategies.
     </p>
-  </div>
 </div>
 {{ end }}
