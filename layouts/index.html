@@ -1,6 +1,5 @@
 {{ define "main" }}
 <style>
-    /* Compact Hero Section */
     .hero-container {
         display: flex;
         align-items: center;
@@ -14,8 +13,8 @@
         height: 160px;
         border-radius: 50%; 
         object-fit: cover;
-        /* object-position moves the 'camera' - 50% 20% shifts it up to center the face */
-        object-position: 50% 20%; 
+        /* This centers your face by shifting the image up slightly */
+        object-position: 50% 15%; 
         border: 3px solid #AB0520;
         box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
@@ -33,13 +32,11 @@
         margin-top: 5px; 
     }
 
-    /* Social Icons */
     .social-links { display: flex; gap: 20px; margin-top: 20px; }
     .social-links a img { width: 34px; height: 34px; transition: transform 0.2s; } 
     .social-links a:hover img { transform: scale(1.1); }
     .gh-icon { filter: invert(var(--theme-invert, 1)); }
 
-    /* Video Section */
     .video-section {
         margin-top: 40px;
         max-width: 800px; 
@@ -69,6 +66,7 @@
 
 <div class="hero-container">
     <img src="/img/profile.jpg" alt="Kyler Nats" class="headshot">
+    
     <div class="hero-text">
         <h1>Kyler Nats</h1>
         <p>Master of Science in MIS Professional | Concentration in Cybersecurity</p>
