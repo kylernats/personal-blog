@@ -17,7 +17,7 @@ Building these labs confirmed that in cybersecurity, theory is a helpful, but pr
 
 ### Pillar 1: The Criticality of Patch Management
 
-**The Insight:** I discovered that legacy software is not just "old", it is a pre-paved road for attackers.
+**The Insight:** I discovered that legacy software is not just "old", it is a potential in for attackers.
 
 **The Evidence:** During my Offensive Security Lab, I found that a single unpatched service like vsFTPd 2.3.4 allowed me to gain root access in seconds using a known backdoor.
 

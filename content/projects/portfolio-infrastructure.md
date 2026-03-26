@@ -4,7 +4,7 @@ draft: false
 ---
 
 
-A technical deep-dive into engineering a containerized, high-performance portfolio using Hugo and Docker to ensure consistent deployments and secure web hosting.
+How I built a containerized, high-performance portfolio using Hugo and Docker to ensure consistent deployments and secure web hosting.
 
 ---
 
@@ -52,6 +52,6 @@ This project moved beyond simple web design to focus on the infrastructure requi
 
 **The Risk:** Without monitoring, I have no visibility into potential attack attempts or how users are interacting with the project labs.
 
-**The Plan:** In the next phase, I will integrate Google Analytics to track recruiter engagement and implement Content Security Policy (CSP) headers to mitigate Cross-Site Scripting (XSS) risks.
+**The Plan:** In the next phase, I will integrate Google Analytics to track engagement.
 
 ---

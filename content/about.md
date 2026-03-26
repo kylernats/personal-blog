@@ -24,17 +24,17 @@ During my internship at FirstBank, I served as a cybersecurity analyst monitorin
 As a Graduate Research Assistant for the University of Arizona MIS department, I am currently leading a risk assessment for the McKeever Lab. This project involves a deep-dive into the NIST 800-53 framework to ensure our computer labs meet federal and university security standards. I also utilize Elasticsearch to manage and analyze large datasets within our research environment.
 
 ### Cloud Security & Infrastructure
-Holding the AWS Certified Cloud Practitioner certification has given me a strong foundation in cloud-native security. I focus on applying security principles—like IAM roles and VPC isolation—to cloud environments to prevent misconfigurations and data exposure. I enjoy using Terraform to automate these security layers as code.
+Holding the AWS Certified Cloud Practitioner certification has given me a strong foundation in cloud-native security. I focus on applying security principles like IAM roles and VPC isolation to cloud environments to prevent misconfigurations and data exposure. I enjoy using Terraform to automate these security layers as code.
 
 ### Technical Toolkit
 
-**Security Tools:** Splunk (SIEM), Crowdstrike (EDR), Proofpoint, Nessus.
+**Security Tools:** Splunk (SIEM), Crowdstrike (EDR), Proofpoint, Nessus, Kali Linux
 
-**Cloud & DevSecOps:** AWS, Terraform, Docker, GitHub Actions.
+**Cloud & DevSecOps:** AWS, Terraform, Docker, GitHub Actions
 
-**Frameworks:** NIST 800-53, CMMC 2.0.
+**Frameworks:** NIST 800-53, CMMC 2.0., NIST CSF
 
-**Data & Code:** Elasticsearch, Python, SQL, Linux (CLI).
+**Data & Code:** Elasticsearch, Python, SQL, Linux (CLI)
 
 
 ---

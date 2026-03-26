@@ -3,7 +3,7 @@ title: "Scalable RAG Chatbot Architecture"
 draft: false
 ---
 
-An engineering deep-dive into building a high-performance Retrieval-Augmented Generation (RAG) pipeline designed to securely query massive datasets using vector embeddings and cloud-native architecture.
+I built a high-performance Retrieval-Augmented Generation (RAG) pipeline designed to securely query massive datasets using vector embeddings and cloud-native architecture.
 
 ---
 
@@ -37,20 +37,20 @@ This project engineered a scalable solution for AI-driven data retrieval, allowi
 
 **The Problem:** Without a strict retrieval mechanism, the chatbot would often make up product details that weren't in the actual dataset.
 
-**The Fix:** I integrated a Vector Database to index the Amazon data into high-dimensional embeddings. This allows the system to "Retrieve" only the most relevant facts before "Generating" a response, ensuring every answer is grounded in factual evidence.
+**The Fix:** I integrated a Vector Database to index the Amazon data into high-dimensional embeddings. This allows the system to retrieve only the most relevant facts before generating a response, ensuring every answer is grounded in factual evidence.
 
 ### Problem 5: Data Latency in Search
 
 **The Problem:** Searching through millions of rows of raw text for every user query was too slow for a real-time chat interface.
 
-**The Fix:** I implemented Semantic Search using specialized embedding models. This allows the system to understand the intent behind a user's question and find the correct data in milliseconds, rather than performing slow keyword matches.
+**The Fix:** I implemented semantic search using specialized embedding models. This allows the system to understand the intent behind a user's question and find the correct data in milliseconds, rather than performing slow keyword matches.
 
 ### The Next Level: Production Hardening
 
 **Current State:** The RAG system is functional, secure, and memory-efficient.
 
-**The Risk:** In a production environment, "Prompt Injection" attacks could potentially trick the AI into leaking sensitive database information.
+**The Risk:** In a production environment, prompt injection attacks could potentially trick the AI into leaking sensitive database information.
 
-**The Plan:** In the next iteration, I will implement Prompt Guardrails and Pydantic Output Parsers to strictly validate all AI inputs and outputs, ensuring the system remains compliant with security standards like NIST 800-53.
+**The Plan:** In the next iteration, I will implement prompt guardrails to strictly validate all AI inputs and outputs, ensuring the system remains compliant with security standards like NIST 800-53.
 
 ---

@@ -3,7 +3,7 @@ title: "Offensive Security & Pentesting Lab"
 draft: false
 ---
 
-A segregated, high-fidelity virtual laboratory used to simulate the end-to-end lifecycle of a cyberattack to identify and mitigate defensive gaps.
+A segregated virtual lab used to simulate the end-to-end lifecycle of a cyberattack to identify and mitigate defensive gaps.
 
 ---
 
@@ -18,7 +18,7 @@ This lab environment allowed for the safe execution of offensive security tactic
 
 **The Problem:** Initial basic scans were easily detected by host-level logging and provided an incomplete picture of the target's network topology.
 
-**The Fix:** I advanced my reconnaissance strategy by using Zenmap for visual topology mapping and dmitry for deep-dive subdomain and OSINT gathering. This provided a clearer "map" of the target before any exploit was attempted.
+**The Fix:** I advanced my reconnaissance strategy by using Zenmap for visual topology mapping and dmitry for deep-dive subdomain and OSINT gathering. This provided a clearer map of the target before any exploit was attempted.
 
 ### Problem 2: Egress Filtering & Firewall Blocks
 

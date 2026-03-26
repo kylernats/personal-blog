@@ -4,7 +4,7 @@ title: "Automated AWS Infrastructure with Terraform"
 draft: false
 ---
 
-A technical deep-dive into replacing manual cloud configuration with a secure, immutable Infrastructure-as-Code (IaC) pipeline to deploy hardened AWS environments.
+Learning how to replace manual cloud configuration with a secure, immutable Infrastructure-as-Code (IaC) pipeline to deploy hardened AWS environments.
 
 ---
 
