@@ -1,55 +1,52 @@
 {{ define "main" }}
 <style>
-    /* Compact Hero Section */
     .hero-container {
         display: flex;
         align-items: center;
-        gap: 30px; /* Reduced gap for condensation */
-        padding: 40px 0; /* Reduced padding for condensation */
+        gap: 30px; 
+        padding: 40px 0; 
         border-bottom: 1px solid var(--border);
     }
     
     .headshot {
-        width: 160px; /* Slightly smaller for condensation */
+        width: 160px; 
         height: 160px;
-        border-radius: 50%; /* Circle looks better for condensed views */
+        border-radius: 50%; 
         object-fit: cover;
         border: 3px solid #AB0520;
         box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
 
     .hero-text h1 { 
-        font-size: 3rem; /* Scaled down slightly */
+        font-size: 3rem; 
         margin: 0; 
         color: var(--primary); 
         letter-spacing: -1.5px;
     }
 
     .hero-text p { 
-        font-size: 1.1rem; /* Scaled down slightly */
+        font-size: 1.1rem; 
         color: var(--secondary); 
         margin-top: 5px; 
     }
 
-    /* Fixed & Enlarged Social Icons */
     .social-links { display: flex; gap: 20px; margin-top: 20px; }
-    .social-links a img { width: 34px; height: 34px; transition: transform 0.2s; } /* Enlarger Icons */
+    .social-links a img { width: 34px; height: 34px; transition: transform 0.2s; } 
     .social-links a:hover img { transform: scale(1.1); }
     .gh-icon { filter: invert(var(--theme-invert, 1)); }
 
-    /* Centered Video Section */
     .video-section {
         margin-top: 40px;
-        max-width: 800px; /* Condensed focus */
+        max-width: 800px; 
         margin-left: auto;
         margin-right: auto;
     }
 
     .video-wrapper {
         position: relative;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        padding-bottom: 56.25%; 
         height: 0;
-        border-radius: 8px; /* Slightly tighter radius for condensed look */
+        border-radius: 8px; 
         overflow: hidden;
         background: #000;
         box-shadow: 0 10px 30px rgba(0,0,0,0.15);
@@ -66,7 +63,8 @@
 </style>
 
 <div class="hero-container">
-    <img src="/img/headshot.jpg" alt="Kyler Nats" class="headshot">
+    <img src="{{ "img/headshot.jpg" | absURL }}" alt="Kyler Nats" class="headshot">
+    
     <div class="hero-text">
         <h1>Kyler Nats</h1>
         <p>Master of Science in MIS Professional | Concentration in Cybersecurity</p>
