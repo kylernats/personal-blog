@@ -32,10 +32,29 @@
         margin-top: 5px; 
     }
 
-    .social-links { display: flex; gap: 20px; margin-top: 20px; }
+    .social-links { display: flex; gap: 20px; margin-top: 20px; align-items: center; }
     .social-links a img { width: 34px; height: 34px; transition: transform 0.2s; } 
     .social-links a:hover img { transform: scale(1.1); }
     .gh-icon { filter: invert(var(--theme-invert, 1)); }
+
+    /* Resume Button Style */
+    .resume-btn {
+        display: inline-block;
+        padding: 8px 16px;
+        background: transparent;
+        color: #AB0520;
+        border: 2px solid #AB0520;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .resume-btn:hover {
+        background: #AB0520;
+        color: #fff;
+    }
 
     /* REWRITTEN QUALIFICATIONS SECTION */
     .qualifications-grid {
@@ -126,6 +145,7 @@
             <a href="https://github.com/kylernats" target="_blank">
                 <img class="gh-icon" src="https://cdn.worldvectorlogo.com/logos/github-icon-1.svg" alt="GitHub">
             </a>
+            <a href="./resume.pdf" class="resume-btn" target="_blank">View Resume</a>
         </div>
     </div>
 </div>
