@@ -14,7 +14,6 @@
         height: 160px;
         border-radius: 50%; 
         object-fit: cover;
-        /* Centers your face within the circle */
         object-position: 50% 15%; 
         border: 3px solid #AB0520;
         box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -33,11 +32,58 @@
         margin-top: 5px; 
     }
 
-    /* Fixed & Enlarged Social Icons */
     .social-links { display: flex; gap: 20px; margin-top: 20px; }
     .social-links a img { width: 34px; height: 34px; transition: transform 0.2s; } 
     .social-links a:hover img { transform: scale(1.1); }
     .gh-icon { filter: invert(var(--theme-invert, 1)); }
+
+    /* REWRITTEN QUALIFICATIONS SECTION */
+    .qualifications-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin: 40px 0;
+        padding-bottom: 40px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .cert-pill {
+        display: inline-block;
+        padding: 6px 14px;
+        background: #AB0520;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin: 0 8px 10px 0;
+    }
+
+    .exp-item {
+        margin-bottom: 20px;
+    }
+
+    .exp-role {
+        display: block;
+        font-weight: 700;
+        color: var(--primary);
+        font-size: 1rem;
+    }
+
+    .exp-company {
+        display: block;
+        font-size: 0.9rem;
+        color: var(--secondary);
+        margin-top: 2px;
+    }
 
     /* Centered Video Section */
     .video-section {
@@ -107,7 +153,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="video-section">
     <h3 style="margin-bottom: 20px; font-size: 1.1rem; color: var(--primary);">Chrome Password Security</h3>
