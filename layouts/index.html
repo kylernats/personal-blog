@@ -1,41 +1,58 @@
 {{ define "main" }}
 <style>
+    /* Compact Hero Section */
     .hero-container {
         display: flex;
         align-items: center;
-        gap: 50px;
-        padding: 60px 0;
+        gap: 30px; /* Reduced gap for condensation */
+        padding: 40px 0; /* Reduced padding for condensation */
         border-bottom: 1px solid var(--border);
     }
     
     .headshot {
-        width: 180px;
-        height: 180px;
-        border-radius: 12px;
+        width: 160px; /* Slightly smaller for condensation */
+        height: 160px;
+        border-radius: 50%; /* Circle looks better for condensed views */
         object-fit: cover;
-        border: 2px solid #AB0520;
+        border: 3px solid #AB0520;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
 
-    .hero-text h1 { font-size: 3.5rem; margin: 0; color: var(--primary); letter-spacing: -1.5px; }
-    .hero-text p { font-size: 1.2rem; color: var(--secondary); margin-top: 5px; }
+    .hero-text h1 { 
+        font-size: 3rem; /* Scaled down slightly */
+        margin: 0; 
+        color: var(--primary); 
+        letter-spacing: -1.5px;
+    }
 
-    .social-links { display: flex; gap: 15px; margin-top: 20px; }
-    .social-links a img { width: 26px; }
+    .hero-text p { 
+        font-size: 1.1rem; /* Scaled down slightly */
+        color: var(--secondary); 
+        margin-top: 5px; 
+    }
+
+    /* Fixed & Enlarged Social Icons */
+    .social-links { display: flex; gap: 20px; margin-top: 20px; }
+    .social-links a img { width: 34px; height: 34px; transition: transform 0.2s; } /* Enlarger Icons */
+    .social-links a:hover img { transform: scale(1.1); }
     .gh-icon { filter: invert(var(--theme-invert, 1)); }
 
+    /* Centered Video Section */
     .video-section {
-        margin-top: 50px;
-        max-width: 900px; /* Centers the content better */
+        margin-top: 40px;
+        max-width: 800px; /* Condensed focus */
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .video-wrapper {
         position: relative;
-        padding-bottom: 56.25%;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
         height: 0;
-        border-radius: 12px;
+        border-radius: 8px; /* Slightly tighter radius for condensed look */
         overflow: hidden;
         background: #000;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
 
     .video-wrapper iframe {
@@ -53,6 +70,7 @@
     <div class="hero-text">
         <h1>Kyler Nats</h1>
         <p>Master of Science in MIS @ University of Arizona</p>
+        
         <div class="social-links">
             <a href="https://linkedin.com/in/kyler-nats/" target="_blank">
                 <img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" alt="LinkedIn">
@@ -65,12 +83,12 @@
 </div>
 
 <div class="video-section">
-    <h3 style="margin-bottom: 20px; font-size: 1.2rem; color: var(--primary);">Security Breakdown: Chrome Password Security</h3>
+    <h3 style="margin-bottom: 20px; font-size: 1.1rem; color: var(--primary);">Featured Security Content: Chrome Password Analysis</h3>
     <div class="video-wrapper">
         <iframe src="https://www.youtube.com/embed/Gy2bAcMD3bs" allowfullscreen></iframe>
     </div>
-    <p style="margin-top: 20px; line-height: 1.6; color: var(--secondary);">
-        Technical demonstration of credential access vulnerabilities and mitigation strategies.
+    <p style="margin-top: 15px; font-size: 0.9rem; line-height: 1.5; color: var(--secondary); max-width: 600px;">
+        A brief analysis of how browser credential access can be compromised and practical defensive strategies.
     </p>
 </div>
 {{ end }}
