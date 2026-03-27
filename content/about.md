@@ -4,13 +4,13 @@ layout: "page"
 ---
 
 <style>
-    /* Grid Layout - More stable than Flex for side-by-side */
+    /* Updated Grid Layout - Vertically Centered Content */
     .hero-grid {
         display: grid;
         grid-template-columns: 220px 1fr;
-        gap: 50px;
-        align-items: center;
-        padding: 40px 0;
+        gap: 60px; /* Increased gap for better visual separation */
+        align-items: center; /* VERICALLY CENTERS THE TEXT WITH THE IMAGE */
+        padding: 50px 0; /* More padding on top and bottom */
         border-bottom: 1px solid var(--border);
         margin-bottom: 50px;
     }
@@ -18,12 +18,12 @@ layout: "page"
     .hero-image {
         width: 220px;
         height: 220px;
-        min-width: 220px; /* Forces it to stay 220px */
+        min-width: 220px;
         border-radius: 50%;
         object-fit: cover;
         object-position: 50% 15%;
         border: 3px solid #AB0520;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
     }
 
     .hero-text h1 {
@@ -34,18 +34,19 @@ layout: "page"
     }
 
     .hero-text .subtitle {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         color: var(--secondary);
-        margin: 5px 0 20px 0;
+        margin: 8px 0 25px 0;
+        font-weight: 400;
     }
 
     .value-statement {
-        font-size: 1.05rem;
-        line-height: 1.65;
+        font-size: 1.1rem;
+        line-height: 1.7;
         color: var(--primary);
     }
 
-    /* Stack on mobile */
+    /* Mobile view - Stack centered */
     @media (max-width: 800px) {
         .hero-grid {
             grid-template-columns: 1fr;
@@ -55,14 +56,14 @@ layout: "page"
         }
     }
 
-    /* Experience Styling */
+    /* Experience Styling (Impact) */
     .section-label {
         font-size: 1rem;
         font-weight: 700;
         color: var(--primary);
         text-transform: uppercase;
         letter-spacing: 1.5px;
-        margin: 40px 0 30px 0;
+        margin: 50px 0 35px 0;
     }
 
     .exp-item {
@@ -77,7 +78,7 @@ layout: "page"
 
     .exp-header h3 {
         margin: 0;
-        font-size: 1.3rem;
+        font-size: 1.35rem;
         color: #AB0520;
         font-weight: 700;
     }
@@ -86,24 +87,25 @@ layout: "page"
         width: 35px;
         height: 2px;
         background-color: #AB0520;
-        margin: 8px 0 18px 0;
+        margin: 10px 0 20px 0;
+        opacity: 0.8;
     }
 
     .exp-date {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         color: var(--secondary);
     }
 
     .exp-text p {
         margin-bottom: 15px;
-        line-height: 1.6;
+        line-height: 1.65;
     }
 
     /* Skills Table */
     .skills-table {
         width: 100%;
         border-collapse: collapse;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
     }
 
     .skills-table td {
@@ -112,7 +114,7 @@ layout: "page"
         vertical-align: top;
     }
 
-    .cat-name {
+    .skills-cat {
         width: 25%;
         font-weight: 700;
         color: #AB0520;
@@ -173,23 +175,23 @@ layout: "page"
 
 <table class="skills-table">
     <tr>
-        <td class="cat-name">Defensive Ops</td>
+        <td class="skills-cat">Defensive Ops</td>
         <td>Splunk, CrowdStrike, Proofpoint Nexus AI, Nessus, Kali Linux</td>
     </tr>
     <tr>
-        <td class="cat-name">Cloud & DevOps</td>
+        <td class="skills-cat">Cloud & DevOps</td>
         <td>AWS, Terraform, Docker, Kubernetes, GitHub Actions</td>
     </tr>
     <tr>
-        <td class="cat-name">Frameworks</td>
+        <td class="skills-cat">Frameworks</td>
         <td>NIST 800-53, NIST CSF 2.0, CMMC 2.0, MITRE ATT&CK</td>
     </tr>
     <tr>
-        <td class="cat-name">Data & Code</td>
+        <td class="skills-cat">Data & Code</td>
         <td>Elasticsearch, Python, SQL, Linux CLI</td>
     </tr>
 </table>
 
-<h2 class="section-label">Education</h2>
+<h2 class="section-title" style="font-size: 1rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1.5px; margin: 50px 0 30px 0;">Education</h2>
 <p style="margin-bottom: 10px;"><strong>M.S. in Management Information Systems</strong> | University of Arizona | Expected May 2026</p>
 <p><strong>B.S. in Management Information Systems</strong> | University of Arizona | Magna Cum Laude</p>
