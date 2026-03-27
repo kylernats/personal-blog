@@ -4,7 +4,7 @@ layout: "page"
 ---
 
 <style>
-    /* Hero Section - Vertical Alignment for better spacing */
+    /* Profile Header - Centered for better spacing and impact */
     .profile-hero {
         text-align: center;
         padding: 40px 0;
@@ -12,7 +12,7 @@ layout: "page"
         margin-bottom: 50px;
     }
 
-    .profile-img {
+    .profile-pic {
         width: 160px;
         height: 160px;
         border-radius: 50%;
@@ -36,7 +36,7 @@ layout: "page"
         margin-bottom: 30px;
     }
 
-    .strategy-text {
+    .value-statement {
         max-width: 800px;
         margin: 0 auto;
         font-size: 1.1rem;
@@ -45,7 +45,7 @@ layout: "page"
         text-align: center;
     }
 
-    /* Impact Sections */
+    /* Section Labeling */
     .section-label {
         font-size: 1rem;
         font-weight: 700;
@@ -55,33 +55,35 @@ layout: "page"
         margin-bottom: 40px;
     }
 
-    .content-wrapper {
+    .main-content {
         max-width: 850px;
         margin: 0 auto;
     }
 
-    .exp-entry {
+    /* Experience Styling */
+    .exp-block {
         margin-bottom: 45px;
     }
 
-    .exp-title-bar {
+    .exp-top {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
     }
 
-    .exp-entry h3 {
+    .exp-block h3 {
         margin: 0;
         font-size: 1.3rem;
         color: #AB0520;
         font-weight: 700;
     }
 
-    .exp-line {
+    .exp-accent {
         width: 35px;
         height: 2px;
         background-color: #AB0520;
         margin: 8px 0 18px 0;
+        opacity: 0.8;
     }
 
     .exp-date {
@@ -89,16 +91,17 @@ layout: "page"
         color: var(--secondary);
     }
 
-    .exp-body p {
+    .exp-text p {
         margin-bottom: 15px;
         line-height: 1.65;
+        color: var(--primary);
     }
 
     /* Skills Table */
     .skills-grid {
         width: 100%;
         border-collapse: collapse;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .skills-grid td {
@@ -107,7 +110,7 @@ layout: "page"
         vertical-align: top;
     }
 
-    .skills-label {
+    .skills-title {
         width: 25%;
         font-weight: 700;
         color: #AB0520;
@@ -115,71 +118,71 @@ layout: "page"
 </style>
 
 <div class="profile-hero">
-    <img src="../img/profile.jpg" alt="Kyler Nats" class="profile-img">
+    <img src="../img/profile.jpg" alt="Kyler Nats" class="profile-pic">
     <h1>Kyler Nats</h1>
     <p class="subtitle">Cybersecurity Professional | M.S. in MIS</p>
-    <div class="strategy-text">
+    <div class="value-statement">
         I specialize in bridging the gap between technical defense and business resilience. By aligning infrastructure deployment with organizational risk, I secure critical assets while maintaining the agility needed for innovation. I leverage a proactive break-fix methodology to identify and mitigate vulnerabilities before they become business liabilities, ensuring long-term system integrity and compliance.
     </div>
 </div>
 
-<div class="content-wrapper">
+<div class="main-content">
     <h2 class="section-label">Impact</h2>
 
-    <div class="exp-entry">
-        <div class="exp-title-bar">
+    <div class="exp-block">
+        <div class="exp-top">
             <h3>Enterprise Security Operations</h3>
             <span class="exp-date">FirstBank | Summer 2025</span>
         </div>
-        <div class="exp-line"></div>
-        <div class="exp-body">
+        <div class="exp-accent"></div>
+        <div class="exp-text">
             <p>Wrote comprehensive technical documentation for core security alerts and investigation workflows. This initiative is projected to reduce future analyst training and development time by 30%, ensuring a consistent and rapid response across the SOC.</p>
             <p>Led the integration of Nexus AI within Proofpoint. By transitioning from static, rule-based filtering to an AI-learned response model, I automated a historically manual triage process, saving analysts 25% of their weekly investigation time.</p>
             <p>Investigated alerts across a network of 2,500+ employees using Splunk and CrowdStrike, maintaining zero operational downtime by identifying risks before they escalated into incidents.</p>
         </div>
     </div>
 
-    <div class="exp-entry">
-        <div class="exp-title-bar">
+    <div class="exp-block">
+        <div class="exp-top">
             <h3>Risk Management & Compliance</h3>
             <span class="exp-date">University of Arizona, McKeever Lab | 2025 – Present</span>
         </div>
-        <div class="exp-line"></div>
-        <div class="exp-body">
+        <div class="exp-accent"></div>
+        <div class="exp-text">
             <p>Leading a comprehensive Information Security Risk Management (RMaP) project using the NIST 800-53 framework. This involves performing a gap analysis and implementing security controls within the UASecure platform.</p>
             <p>Established a hardened infrastructure that allows for federal research data to be processed with 100% adherence to university and grant-mandated security standards, moving beyond check-box compliance to functional security.</p>
         </div>
     </div>
 
-    <div class="exp-entry">
-        <div class="exp-title-bar">
+    <div class="exp-block">
+        <div class="exp-top">
             <h3>Data Analytics & Strategic Growth</h3>
             <span class="exp-date">UA Baseball Strategic Consultant | 2025 – Present</span>
         </div>
-        <div class="exp-line"></div>
-        <div class="exp-body">
+        <div class="exp-accent"></div>
+        <div class="exp-text">
             <p>Leading a team to process 14M+ data points, identifying key awareness leakages in the current marketing funnel to scale fan attendance and organizational revenue through advanced data modeling.</p>
             <p>Developed a data-driven strategy projected to increase organization revenue by 10% and scale attendance potential by 20% through targeted engagement and funnel optimization.</p>
         </div>
     </div>
 
-    <h2 class="section-label">Technologies & Skills</h2>
+    <h2 class="section-label" style="margin-top: 60px;">Technologies & Skills</h2>
 
     <table class="skills-grid">
         <tr>
-            <td class="skills-label">Defensive Ops</td>
+            <td class="skills-title">Defensive Ops</td>
             <td>Splunk, CrowdStrike, Proofpoint Nexus AI, Nessus, Kali Linux</td>
         </tr>
         <tr>
-            <td class="skills-label">Cloud & DevOps</td>
+            <td class="skills-title">Cloud & DevOps</td>
             <td>AWS, Terraform, Docker, Kubernetes, GitHub Actions</td>
         </tr>
         <tr>
-            <td class="skills-label">Frameworks</td>
+            <td class="skills-title">Frameworks</td>
             <td>NIST 800-53, NIST CSF 2.0, CMMC 2.0, MITRE ATT&CK</td>
         </tr>
         <tr>
-            <td class="skills-label">Data & Code</td>
+            <td class="skills-title">Data & Code</td>
             <td>Elasticsearch, Python, SQL, Linux CLI</td>
         </tr>
     </table>
