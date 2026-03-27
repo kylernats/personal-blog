@@ -62,8 +62,3 @@ theme = "PaperMod"
     name = "CMMC 2.0 Framework"
     url = "/blog/cmmc-framework/"
     weight = 1
-
-[[menu.main]]
-    name = "Lessons Learned"
-    url = "/lessons-learned/"
-    weight = 50
