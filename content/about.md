@@ -112,7 +112,7 @@ layout: "page"
 </style>
 
 <div class="about-hero">
-    <img src="../img/headshot.jpg" alt="Kyler Nats" class="about-headshot">
+    <img src="../img/profile.jpg" alt="Kyler Nats" class="about-headshot">
     <div class="about-info">
         <h1>Kyler Nats</h1>
         <p class="subtitle">Cybersecurity Professional | M.S. in MIS</p>
