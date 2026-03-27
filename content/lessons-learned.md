@@ -3,9 +3,6 @@ title: "Lessons Learned"
 draft: false
 ---
 
-Some stuff I learned building end-to-end security simulations, focusing on the gap between theoretical vulnerabilities and the reality of defending production-grade infrastructure.
-
----
 
 ## Retrospective
 
